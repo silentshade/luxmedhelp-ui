@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
+<link href="css/core.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/core-ui-select.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/jquery.scrollpane.css" media="screen" rel="stylesheet" type="text/css">
+
+</style>
+</head>
+
+<body>
+<div class="body">
+	<div class="header">
+    	<div class="nav">
+        	<div class="table">
+            	<ul> 
+                	<li><a href="">Главная</a></li>
+                    <li><a class="curent" href="">Клиники</a></li>
+                    <li><a href="">Программы</a></li>
+                    <li><a href="">Чекапы</a></li>
+                    <li><a href="">Услуги </a></li>
+                    <li><a href="">Цены</a></li>
+                    <li><a href="">Вопросы и ответы</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>	
+    	<div class="table">
+        	<a href="" class="logo"></a>
+            <a href="" onclick="return false" class="top_b"></a>
+            <div class="tel">
+            	<div class="all_rus">
+                8-800-550-19-50
+				<span>БЕСПЛАТНо по россии</span>
+                </div>
+                <div class="sity">
+                Москва
+                <span>+7-495-532-75-55</span>
+                </div>
+                <div class="sity">
+                Германия
+                <span>+49-30-2089-66-54</span>
+                </div>
+            </div>
+            <a href="" class="button">
+            Оформить заявку
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="intro">
+    	<div class="table">
+        	<div class="left">
+            	<h1>Лечение без границ</h1>
+                <div class="border">
+                <p>
+                Здоровье, своё и близких, – это самая большая ценность в жизни человека. Поэтому мы открываем для своих клиентов возможность получения качественного лечения в лучших клиниках мира.</p>
+                Оформите заявку на этом сайте и наши специалисты свяжутся с вами для предоставления бесплатной консультации и подбора подходящей именно вам программы лечения.  Мы возьмём на себя полную организацию вашей поездки в выбранную клинику: осуществим перевод документов, поможем с получением визы и бронированием гостиницы для вас и сопровождающих вас близких, а так же обеспечим сопровождение врачом и переводчиком в стране лечения.
+            	<a href="" class="button">
+            	Оформить заявку
+            	</a>
+                </div>
+            </div>
+            <div class="right">
+            <img src="image/intro_r_img.png" width="268" height="165">
+            
+           	<span class="label">Ваше заболевание</span>
+            <div class="jktu">
+            	<div class="con_none active">
+           			<input type="text" name="q" id="autocom"  >
+            	</div>
+            </div>
+            <span class="label">Направление лечения</span>
+
+            <div class="new_sel">
+                <div class="select">Выберите пункт</div>
+                <div class="drop">
+                    <div value="first">Первый пункт</div>
+                    <div value="second" class="check">Второй пункт</div>
+                    <div value="third">Третий пункт</div>
+                    <div value="fourth">Четвертый пункт</div>
+                    <div value="first">Первый пункт</div>
+                    <div value="second" class="check">Второй пункт</div>
+                    <div value="third">Третий пункт</div>
+                    <div value="fourth">Четвертый пункт</div>
+                </div>
+                <select class="newselect" name="select" value="first">
+                    <option value="first">1</option>
+                    <option value="second">2</option>
+                    <option value="third">3</option>
+                    <option value="fourth">4</option>
+                    <option value="first">1</option>
+                    <option value="second">2</option>
+                    <option value="third">3</option>
+                    <option value="fourth">4</option>
+                </select>
+            </div>
+            
+            <span class="label">Предпочитаемая страна лечения </span>
+            <div class="new_sel">
+                <div class="select">Выберите пункт</div>
+                <div class="drop">
+                  <div value="1" class="check">Не имеет значения</div>
+                    <div value="2"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
+                    <div value="3"><img src="image/flag/Germany.png" width="16" height="16">Германия</div>
+                    <div value="4"><img src="image/flag/Israel.png" width="16" height="16">США</div>
+                    <div value="5"><img src="image/flag/Czech Republic.png" width="16" height="16">Чехия</div>
+                    <div value="6"><img src="image/flag/Israel.png" width="16" height="16">Израиль</div>
+                    <div value="7"><img src="image/flag/Spain.png" width="16" height="16">Испания</div>
+                </div>
+                <select class="newselect" name="select" value="first">
+                    <option value="1" >Не имеет значения</option>
+                    <option value="2" >Швейцария</option>
+                    <option value="3" >Германия</option>
+                    <option value="4" >США</option>
+                    <option value="5" >Чехия</option>
+                    <option value="6" >Израиль</option>
+                    <option value="7" >Испания</option>
+                </select>
+            </div>
+            
+            
+<input class="up_clinic" type="button" value="Подобрать клиники">
+           <div class="result" id="result">
+           
+           </div>
+           
+           
+           
+           
+           
+          </div>
+            <div class="clear"></div>
+      </div>
+    </div>
+    <div class="BENEFITS">
+      	<div class="table">
+        	<div class="left">
+            <img src="image/index_benefits.jpg" width="401" height="300"> 
+            </div>
+            <div class="right">
+            <span>Мы предлагаем вам:</span>
+            <ul>
+            	<li><span>Госпитализацию в лучшие клиники</span> в соответствии с профилем заболевания</li>
+                <li><span>Профессиональный перевод</span> медицинской документации</li>
+                <li>Бесплатное <span>оформление визы</span> и <span>бронирование билетов</span></li>
+                <li><span>Сопровождение</span> личным переводчиком-координатором или врачом</li>
+                <li><span>Экспертный анализ ведущими</span> специалистами и организация "второго мнения" (second opinion)</li>
+                <li><span>Организация трансфера</span> в лечебное учреждение или отель</li>
+            </ul>
+            <a href="">Подробный список услуг</a>
+            </div>
+      </div>
+    </div>
+    <div class="slider">
+    	<div class="table">
+        	<div id="wrapper">
+                <div id="carousel">
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/Switzerland.png" width="30" >Лечение в <br>	<span>Швейцарии</span>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/United States of America(USA).png" width="31">Лечение в <br> <span>США</span> 
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/Spain.png" width="31" >Лечение в <br> <span>Испании</span> 
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/Israel.png" width="31" >Лечение в <br> <span>Израиле</span>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/Germany.png" width="31" >Лечение в <br> <span>Германии</span>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/Czech Republic.png" width="31" >Лечение в <br> <span>Чехии</span>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                   		<img src="image/flag/24/Switzerland.png" width="30" >Лечение в <br>	<span>Швейцарии</span>
+                        </a>
+                    </div>
+                </div>
+                <a id="prev" href="#"></a>
+                <a id="next" href="#"></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="TESTIMONIALS">
+        <div class="table">
+            
+            
+            <div class="review">
+            	<span class="txt">
+                Не могу не поделиться впечатлениями о поездке в Германию на обследование, море эмоций. Как все четко и ясно построено, от начала оформления документов на поездку в Москве до заключительной беседы с врачом и отъезда в Москву. 
+                </span>
+                <span class="info">
+                <a href="" class="name">Ольга, г.Санкт-Петербург</a>
+                <a href="" class="all_review">полный отзыв</a>
+                </span>
+            </div>
+            <div class="review">
+            	<span class="txt">
+                Спасибо компании «Конкуренты»! Спасибо Алене Аркадьевне, которая помогла нам принять правильное решение. И особое спасибо нашим «ангелам» в Германии -Анне Веген и Ирине. После такой поездки начинаешь понимать, почему немцы живут так долго!
+                </span>
+                <span class="info">
+                <a href="" class="name">Наталья, г.Москва</a>
+                <a href="" class="all_review">полный отзыв</a>
+                </span>
+            </div>
+            <div class="review">
+            	<span class="txt">
+                Просто обязан поделиться впечатлениями о поездке в Сингапур на обследование, море эмоций. Как все четко и ясно построено, от начала оформления документов на поездку в Москве до заключительной беседы с врачом и отъезда в Москву. Спасибо компании «Конкуренты»!
+                </span>
+                <span class="info">
+                <a href="" class="name">Иван Иванович, г.Нижний Новгород</a>
+                <a href="" class="all_review">полный отзыв</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="content_index">
+            	<div class="table">
+                	<div class="bg_left"></div>
+                	<div class="left">
+                    	<a href="" class="selected_clinics">Избранные клиники</a>
+                        <div class="clinics-box" id="clinics-box">
+                    <ul class="">
+                        <li>
+                        	<div class="left">
+                            	<img src="image/artice-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
+                                <p class="line">Адрес: <span class="adds">Женева</span></p>
+                                <p>Тип: <span class="type">Частная</span></p>
+								<a href="" class="cost"> Уточнить стоимость</a>
+                            </div>
+                            <div class="right">
+                            	<a href="" class="cc-way">Клиника "Женераль 1"</a><br/>
+                                <a class="cc-web" href="">Сеть клиник "Женолье" </a>
+                                <div class="cc-way_country"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
+                              <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды. Исторический аспект университетского города сторический аспект университетского городаудачно сочетается с живой атмосферой современности.</p><p>
+Несмотря на то, что клиника является многопрофильной, особенно сильные направления в клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая, гинекологическая, лор, онкологическая, нейрохирургия).</p>
+                            	<a href="" class="detail">Подробнее о клинике</a>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="left">
+                            	<img src="image/artice-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
+                                <p class="line">Адрес: <span class="adds">Женева</span></p>
+                                <p>Тип: <span class="type">Частная</span></p>
+								<a href="" class="cost"> Уточнить стоимость</a>
+                            </div>
+                            <div class="right">
+                            	<a href="" class="cc-way">Клиника "Женераль 2"</a><br/>
+                                <a class="cc-web" href="">Сеть клиник "Женолье" </a>
+                                <div class="cc-way_country"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
+                                <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды. Исторический аспект университетского города сторический аспект университетского городаудачно сочетается с живой атмосферой современности.</p>
+<p>Несмотря на то, что клиника является многопрофильной, особенно сильные направления в клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая, гинекологическая, лор, онкологическая, нейрохирургия).</p>
+                            	<a href="" class="detail">Подробнее о клинике</a>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="left">
+                            	<img src="image/artice-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
+                                <p class="line">Адрес: <span class="adds">Женева</span></p>
+                                <p>Тип: <span class="type">Частная</span></p>
+								<a href="" class="cost"> Уточнить стоимость</a>
+                            </div>
+                            <div class="right">
+                            	<a href="" class="cc-way">Клиника "Женераль 3"</a><br/>
+                                <a class="cc-web" href="">Сеть клиник "Женолье" </a>
+                                <div class="cc-way_country"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
+                                <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды. Исторический аспект университетского города сторический аспект университетского городаудачно сочетается с живой атмосферой современности.</p>
+<p>Несмотря на то, что клиника является многопрофильной, особенно сильные направления в клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая, гинекологическая, лор, онкологическая, нейрохирургия).</p>
+                            	<a href="" class="detail">Подробнее о клинике</a>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+                        <a href="" class="in_all_cl">все клиники</a>
+                    </div>
+                    <div class="right">
+                        <a href="" class="diagnostic_programs">Программы диагностики</a>
+                        <ul>
+                           <li><img src="image/check_index.jpg" width="80" height="80"><span>CHECK-UP</span><br><a href="" class="name_check">Заболеваний обмена веществ и ещё что-то для длинны</a>от&nbsp;<span class="cost_check">3245 Евро</span></li> 
+                           <li><img src="image/check_index.jpg" width="80" height="80"><span>CHECK-UP</span><br><a href="" class="name_check">Синдром хронической усталости</a>от&nbsp;<span class="cost_check">1765 Евро</span></li> 
+                           <li><img src="image/check_index.jpg" width="80" height="80"><span>CHECK-UP</span><br><a href="" class="name_check">Заболеваний обмена веществ</a>от&nbsp;<span class="cost_check">3245 Евро</span></li> 
+                        </ul>
+                        <div class="clear"></div>
+                        <a href="" class="all_programs">Все программы</a>
+                        
+                        <a href="" class="diagnostic_programs last_articles">Последние статьи</a>
+                        <div class="recent_articles">
+                        	<ul>
+                            	<li>
+                                <span class="date">
+                                16 ноября 2011
+                                </span>
+                                <a href="" class="title">Доктор Витт о новейшем методе лечения рака предстательной железы Да Винчи и ещё немного для теста длинного заголовка</a>
+                                </li>
+                            	<li>
+                                <span class="date">
+                                16 ноября 2011
+                                </span>
+                                <a href="" class="title">Крупнейший центр Да Винчи в мире: Центр Лечения Простаты в Гронау</a>
+                                </li>
+                            	<li>
+                                <span class="date">
+                                16 ноября 2011
+                                </span>
+                                <a href="" class="title">В Центре Лечения Простаты в Гронау возможно проведение операции ТУР</a>
+                                </li>
+                            	<li>
+                                <span class="date">
+                                16 ноября 2011
+                                </span>
+                                <a href="" class="title">Рак простаты. Что теперь?</a>
+                                </li>
+                                <li>
+                                <span class="date">
+                                16 ноября 2011
+                                </span>
+                                <a href="" class="title">В Центре Лечения Простаты в Гронау возможно проведение операции ТУР</a>
+                                </li>
+                            </ul>
+                        	<a href="" class="all_articles" >Все статьи</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="clear"></div>
+    </div>
+<div class="clear"></div>
+<div class="footer_tp"></div>
+</div>
+
+<div class="footer">
+<div class="left">
+<span>Dr. Soniash Volsky Consult © 2013</span>
+</div>
+<div class="right">
+<span>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+</span>
+</div>
+</div>
+			<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<!--			<script src="js/jquery.core-ui-select.js"></script>-->
+			<script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+			<script src="js/chosen.jquery.min.js"></script>
+			<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+            <script src="js/lib/jquery/plugins/jquery.mousewheel.js"></script>
+			<script src="js/lib/jquery/plugins/jquery.scrollpane.js"></script>
+            <script src="js/js.js"></script>
+			<script type="text/javascript">
+			$( function() {
+				
+					$('#carousel').carouFredSel({
+						width: 960,
+						items: 6,
+						scroll:{ items:1,
+						pauseOnHover: true
+						},
+						auto: {
+							duration: 1250,
+							timeoutDuration: 2500
+						},
+						prev: '#prev',
+						next: '#next',
+						pagination: '#pager',
+					});
+					var availableTags = [
+					  "ActionScript",
+					  "AppleScript",
+					  "Asp",
+					  "BASIC",
+					  "C",
+					  "C++",
+					  "Clojure",
+					  "COBOL",
+					  "ColdFusion",
+					  "Erlang",
+					  "Fortran",
+					  "Groovy",
+					  "Haskell",
+					  "Java",
+					  "JavaScript",
+					  "Lisp",
+					  "Perl",
+					  "PHP",
+					  "Python",
+					  "Ruby",
+					  "Scala",
+					  "Scheme"
+					];
+					$("#autocom").autocomplete({
+					  source: availableTags,
+					  close: function() {
+						$('#result').addClass( "ui-corner-all" );
+						var rez = $("#autocom").val();
+						
+						$('[data-item='+ rez +']').addClass('new')
+							
+					  }
+					});
+					
+					
+					
+						$('select.newselect').addClass('hiden');
+						$('.select').removeClass('hiden');
+						$('.drop').removeClass('hiden');
+						$('.select').click(function(){
+							$(this).parent('.new_sel').find('.drop').fadeIn('fast');
+						});
+						 $('*').click(function(event){
+								var clas = $(this).attr('class');
+								if(clas!='drop'&&clas!='new_sel'&&clas!='select'){
+								  $(".drop").fadeOut('fast');
+								}
+							(event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true));
+						  })
+						
+						
+						$('.drop > div').click(function(){
+							var vall = $(this).attr('value')
+							$(this).closest('.new_sel').find('.select').html($(this).html());
+							$(this).closest('.new_sel').find('select option:selected').removeAttr("selected");
+							$(this).closest('.new_sel').find('select option[value = '+vall+']').attr("selected", "selected");
+							$.each($(this).parent().children('div.check'), function(){
+								$(this).removeClass('check');
+							});
+							
+							$(this).addClass('check');
+							$(this).parent().fadeOut('fast');
+						});
+					
+			});
+
+
+              </script>
+     
+</body>
+</html>

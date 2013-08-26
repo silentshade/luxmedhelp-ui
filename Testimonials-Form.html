@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="style/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="body">
+	<div class="header">
+    	<div class="nav">
+        	<div class="table">
+            	<ul> 
+                	<li><a href="">Главная</a></li>
+                    <li><a href="">Клиники</a></li>
+                    <li><a href="">Программы</a></li>
+                    <li><a href="">Чекапы</a></li>
+                    <li><a href="">Услуги </a></li>
+                    <li><a href="">Цены</a></li>
+                    <li><a href="">Вопросы и ответы</a></li>
+                    <li><a href="" class="curent">Отзывы</a></li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>	
+    	<div class="table">
+        	<a href="" class="logo"></a>
+            <a href="" onclick="return false" class="top_b"></a>
+            <div class="tel">
+            	<div class="all_rus">
+                8-800-550-19-50
+				<span>БЕСПЛАТНо по россии</span>
+                </div>
+                <div class="sity">
+                    Москва
+                    <span>+7-495-532-75-55</span>
+                </div>
+                <div class="sity">
+                    Германия
+                    <span>+49-30-2089-66-54</span>
+                </div>
+            </div>
+            <a href="" class="button">
+            Оформить заявку
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="breadcrumbs" id="breadcrumbs">
+        <div class="table">
+    	<ul>
+        	<li><a href="index.html">Главная</a></li>
+        	<li><a href="index.html">Отзывы</a></li>
+            <li><span>Отправка отзыва</span></li>
+
+        </ul>
+        </div>
+    </div>
+    
+    <div class="common testimonials-form">
+    	<div class="table">
+        	<div class="left"></div>
+            <div class="center">
+          	  <div class="img-box"><img src="image/testimonials-img.png" width="55" height="48" alt="" /></div>
+              <h2>Отзывы</h2>
+              <h3>Поделитесь своими впечатлениями</h3>
+			<form method="get" action="" name="review-form" id="review-form">
+                <p><label for="name">Ваше имя</label></p>
+                <input id="name" />
+                <p><label for="wfrom">Откуда вы?</label></p>
+                <input id="wfrom" />
+                
+                <p><label for="cure">Страна прохождения лечения</label></p>
+                <p class="sel-margin"><select class="styled" id="cure" name="cure">
+                  <option value="0">Затрудняюсь выбрать</option>
+                  <option value="1">Страна 1</option>
+                  <option value="2">Страна 2</option>
+                  <option value="3">Страна 3</option>
+                  <option value="4">Страна 4</option>
+                </select></p>
+                
+                <p><label for="clinic">В какой клинике вы лечились?</label></p>
+                <p class="sel-margin"><select class="styled" id="clinic" id="name">
+                  <option value="0">Затрудняюсь выбрать</option>
+                  <option value="1">Клиника 1</option>
+                  <option value="2">Клиника 2</option>
+                  <option value="3">Клиника 3</option>
+                  <option value="4">Клиника 4</option>
+                </select></p>
+                
+                <p><label for="review">Ваш отзыв</label></p>
+                <textarea id="review" name="review"></textarea>
+                
+                <p><input type="submit" name="fsend" id="fsend" class="button fsend" value="Отправить отзыв"/>
+<!--                <a href="" onClick="return false"  id="4fsend" name="4fsend">Оптравить запрос</a></p>-->
+            </form>
+
+
+           
+            </div>
+            <div class="right">
+                <div class="help-box">
+                
+                        <h4>Нужна помощь?</h4>
+                        <ul>
+                            <li><img src="image/faq-clouds.png" width="15" height="12" /><a href="">Задайте вопрос</a> нашему специалисту в режиме онлайн</li>
+                            <li><img src="image/faq-form_fill.png" width="15" height="15" /><a href="">Заполните форму</a> заявки для получения<br>
+    бесплатной консультации</li>
+                            <li><img src="image/faq-call.png" width="14" height="14" />Позвоните на горячую  линию:<br>
+                            <span>8-800-550-19-50</span>
+                            Бесплатно по России</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="clear"></div>
+      	</div>
+
+    </div>
+  
+<div class="clear"></div>
+</div>
+
+<div class="footer">
+    <div class="left">
+        <span>Dr. Soniash Volsky Consult © 2013</span>
+    </div>
+    <div class="right">
+        <span>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </span>
+    </div>
+</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+		<script type="text/javascript" src="js/custom-form-elements.js"></script>
+        <script type="text/javascript">
+			$(function(){
+				$('select.styled').customSelect();
+			});
+			
+        </script>
+</body>
+</html>
