@@ -19,20 +19,20 @@ jQuery(document).ready(function(){
 	});
 	
 	function fixPaneRefresh(){
-		if (jQuery(".header").length) {
+		if (jQuery("header").length) {
 			var top  = getScrollTop();
-			if (top >= 44) {jQuery(".header .nav ").slideUp(600);
-						   jQuery(".header .top_b").css("visibility","visible");
+			if (top >= 44) {jQuery("header nav ").slideUp(600);
+						   jQuery("header .top_b").css("visibility","visible");
 						   
 			 }
 			
-			else {jQuery(".header .nav").slideDown(200);
-			jQuery(".header .top_b").css("visibility","hidden");
+			else {jQuery("header nav").slideDown(200);
+			jQuery("header .top_b").css("visibility","hidden");
 			}
 		}
 	}
-	jQuery(".header .top_b").click(function(){
-	jQuery(".header .nav").slideToggle(300);
+	jQuery("header .top_b").click(function(){
+	jQuery("header nav").slideToggle(300);
 	});
 	
 });
@@ -55,4 +55,53 @@ jQuery(document).ready(function(){
     Preload('image/button_h.png');
     Preload('image/button_h-comment.png');
 
-	
+
+
+
+
+(function(jQuery){
+    $('select.newselect').addClass('hiden');
+    $('.select').removeClass('hiden');
+    $('.drop').removeClass('hiden');
+    $('.select').click(function(){
+        $(this).parent('.new_sel').find('.drop').fadeIn('fast');
+    });
+    $('*').click(function(event){
+        var clas = $(this).attr('class');
+        if(clas!='drop'&&clas!='new_sel'&&clas!='select'){
+            $(".drop").fadeOut('fast');
+        }
+        (event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true));
+    })
+
+
+    $('.drop > div').click(function(){
+        var vall = $(this).attr('value');
+        var string = $(this).html();
+        var r = /<(\w+)[^>]*>.*<\/\1>/gi;
+        string = string.replace(r,"");
+
+        $(this).closest('.new_sel').find('.select').html(string);
+        $(this).closest('.new_sel').find('select option:selected').removeAttr("selected");
+        $(this).closest('.new_sel').find('select option[value = '+vall+']').attr("selected", "selected");
+        $.each($(this).parent().children('div.check'), function(){
+            $(this).removeClass('check');
+        });
+
+        $(this).addClass('check');
+        $(this).parent().fadeOut('fast');
+
+        if($(this).parent().hasClass("primary")){
+            var selectbox = $(this).attr("data-option");
+            $('.intro .table .right .jktu div').removeClass('active');
+            $('.con_' + selectbox).addClass('active');
+        }
+    });
+
+    function addFader(){
+        $(".new_sel .drop div").each(function(){
+            $(this).prepend("<span class='fader'></span>");
+        });
+    }
+    addFader();
+}($));
