@@ -297,7 +297,7 @@ header {
       text-transform: uppercase;
       font-family: 'Conv_ProximaNova-Reg';
       letter-spacing: 0.2ex; }
-  header .tel .sity {
+  header .tel .city {
     width: 103px;
     height: 35px;
     float: left;
@@ -312,10 +312,10 @@ header {
     padding: 0 17px 0 0;
     border-right: 1px solid #e0f2ff;
     letter-spacing: 0.05em; }
-    header .tel .sity:last-child {
+    header .tel .city:last-child {
       width: 109px;
       margin-left: 18px; }
-    header .tel .sity span {
+    header .tel .city span {
       display: block;
       color: #475564;
       font-family: 'Conv_ARIALNB';
