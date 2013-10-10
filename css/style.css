@@ -236,7 +236,7 @@ header {
         color: #88a3bc;
         text-decoration: none;
         font-family: 'Conv_ProximaNova-Reg'; }
-        header nav ul li a.curent {
+        header nav ul li a.current {
           border-top: solid 4px #ff7f66;
           padding-top: 8px; }
         header nav ul li a:hover {
