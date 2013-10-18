@@ -14,40 +14,36 @@ jQuery(document).ready(function(){
 			   }
 			   return scrOfY;
 	}
-	jQuery(window).scroll(function() {
+	$(window).scroll(function() {
 		fixPaneRefresh();
 	});
 	
 	function fixPaneRefresh(){
-		if (jQuery("header").length) {
+		if ($("header").length) {
 			var top  = getScrollTop();
-			if (top >= 44) {jQuery("header nav ").slideUp(600);
-						   jQuery("header .top_b").css("visibility","visible");
+			if (top >= 44) {
+                $("header nav ").slideUp(600);
+				$("header .top_b").css("visibility","visible");
 						   
-			 }
-			
-			else {jQuery("header nav").slideDown(200);
-			jQuery("header .top_b").css("visibility","hidden");
+			} else {
+                jQuery("header nav").slideDown(200);
+			    jQuery("header .top_b").css("visibility","hidden");
 			}
 		}
 	}
-	jQuery("header .top_b").click(function(){
-	jQuery("header nav").slideToggle(300);
-	});
-	
+	$("header .top_b").click(function(){
+    	$("header nav").slideToggle(300);
+    });
+
 });
 
 
 //preload hover images
-    var ImgArr, ImgLen;
+    var ImgArr = [], ImgLen = 0;
     function Preload (url)
     {
-        if (!ImgArr){
-            ImgArr=new Array();
-            ImgLen=0;
-        }
-        ImgArr[ImgLen]=new Image();
-        ImgArr[ImgLen].src=url;
+        ImgArr[ImgLen] = new Image();
+        ImgArr[ImgLen].src = url;
         ImgLen++;
     }
     Preload('image/green-btn28.png');
@@ -55,24 +51,20 @@ jQuery(document).ready(function(){
     Preload('image/button_h.png');
     Preload('image/button_h-comment.png');
 
-
-
-
-
-(function(jQuery){
-    $('select.newselect').addClass('hiden');
-    $('.select').removeClass('hiden');
-    $('.drop').removeClass('hiden');
+(function($){
+    $('select.newselect').addClass('hidden');
+    $('.select').removeClass('hidden');
+    $('.drop').removeClass('hidden');
     $('.select').click(function(){
         $(this).parent('.new_sel').find('.drop').fadeIn('fast');
     });
-    $('*').click(function(event){
+    $('*').click(function(event) {
         var clas = $(this).attr('class');
-        if(clas!='drop'&&clas!='new_sel'&&clas!='select'){
+        if (clas!='drop'&&clas!='new_sel'&&clas!='select'){
             $(".drop").fadeOut('fast');
         }
         (event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true));
-    })
+    });
 
 
     $('.drop > div').click(function(){
@@ -91,15 +83,15 @@ jQuery(document).ready(function(){
         $(this).addClass('check');
         $(this).parent().fadeOut('fast');
 
-        if($(this).parent().hasClass("primary")){
-            var selectbox = $(this).attr("data-option");
-            $('.intro .table .right .jktu div').removeClass('active');
+        if ($(this).parent().hasClass("primary")) {
+            var selectbox = $(this).data("option");
+            $('.jktu div').removeClass('active');
             $('.con_' + selectbox).addClass('active');
         }
     });
 
     function addFader(){
-        $(".new_sel .drop div").each(function(){
+        $(".new_sel div").each(function(){
             $(this).prepend("<span class='fader'></span>");
         });
     }

@@ -35,8 +35,8 @@ document.write('<style type="text/css">input.styled { display: none; } select.st
 
 var Custom = {
 	init: function() {
-		var inputs = document.getElementsByTagName("input"), span = Array(), textnode, option, active;
-		for(a = 0; a < inputs.length; a++) {
+		var inputs = document.getElementsByTagName("input"), span = new Array(), textnode, option, active;
+		for (var a = 0; a < inputs.length; a++) {
 			if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && inputs[a].className == "styled") {
 				span[a] = document.createElement("span");
 				span[a].className = inputs[a].type;
@@ -61,12 +61,12 @@ var Custom = {
 			}
 		}
 		inputs = document.getElementsByTagName("select");
-		for(a = 0; a < inputs.length; a++) {
+		for (var a = 0; a < inputs.length; a++) {
 			if(inputs[a].className == "styled") {
 				option = inputs[a].getElementsByTagName("option");
 				active = option[0].childNodes[0].nodeValue;
 				textnode = document.createTextNode(active);
-				for(b = 0; b < option.length; b++) {
+				for (var b = 0; b < option.length; b++) {
 					if(option[b].selected == true) {
 						textnode = document.createTextNode(option[b].childNodes[0].nodeValue);
 					}
@@ -86,8 +86,8 @@ var Custom = {
 		document.onmouseup = Custom.clear;
 	},
 	pushed: function() {
-		element = this.nextSibling;
-		if(element.checked == true && element.type == "checkbox") {
+		var element = this.nextSibling;
+		if (element.checked == true && element.type == "checkbox") {
 			this.style.backgroundPosition = "0 -" + checkboxHeight*3 + "px";
 							$(this).parent("li").addClass("selected");
 
@@ -102,9 +102,9 @@ var Custom = {
 		}
 	},
 	check: function() {
-		element = this.nextSibling;
+		var element = this.nextSibling;
 		
-		if(element.checked == true && element.type == "checkbox") {
+		if (element.checked == true && element.type == "checkbox") {
 			this.style.backgroundPosition = "0 0";
 			$(this).parent("li").removeClass("selected");
 			element.checked = false;
@@ -119,10 +119,10 @@ var Custom = {
 			} else {
 				this.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
 				$(this).parent("li").removeClass("selected");
-				group = this.nextSibling.name;
-				inputs = document.getElementsByTagName("input");
-				for(a = 0; a < inputs.length; a++) {
-					if(inputs[a].name == group && inputs[a] != this.nextSibling) {
+				var group = this.nextSibling.name;
+				var inputs = document.getElementsByTagName("input");
+				for (var a = 0; a < inputs.length; a++) {
+					if (inputs[a].name == group && inputs[a] != this.nextSibling) {
 						inputs[a].previousSibling.style.backgroundPosition = "0 0";
 					}
 				}
@@ -136,7 +136,7 @@ var Custom = {
 		}
 	},
 	clear: function() {
-		inputs = document.getElementsByTagName("input");
+		var inputs = document.getElementsByTagName("input");
 		for(var b = 0; b < inputs.length; b++) {
 			if(inputs[b].type == "checkbox" && inputs[b].checked == true && inputs[b].className == "styled") {
 				inputs[b].previousSibling.style.backgroundPosition = "0 -" + checkboxHeight*2 + "px";
@@ -146,13 +146,13 @@ var Custom = {
 				inputs[b].previousSibling.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
 			} else if(inputs[b].type == "radio" && inputs[b].className == "styled") {
 				inputs[b].previousSibling.style.backgroundPosition = "0 0";
-			};
+			}
 		}
 	},
 	choose: function() {
-		option = this.getElementsByTagName("option");
-		for(d = 0; d < option.length; d++) {
-			if(option[d].selected == true) {
+		var option = this.getElementsByTagName("option");
+		for (var d = 0; d < option.length; d++) {
+			if (option[d].selected == true) {
 				document.getElementById("select" + this.name).childNodes[0].nodeValue = option[d].childNodes[0].nodeValue;
 
 			}

@@ -75,7 +75,7 @@
                 <form method="get" action="" name="search-form" id="search-form">
                     <input class="red-btn" type="button" value="Искать клиники">
 
-                    <p><label for="dir">Направление лечения</label></p>
+                    <p><label>Направление лечения</label></p>
                     <p class="sel-margin">
                     <div class="new_sel">
                         <div class="select">Выберите пункт</div>
@@ -100,9 +100,8 @@
                             <option value="fourth">4</option>
                         </select>
                     </div>
-                    </p>
 
-                    <p><label for="dis">Ваше заболевание</label></p>
+                    <p><label>Ваше заболевание</label></p>
                     <p class="sel-margin">
                     <div class="new_sel">
                         <div class="select">Рак простаты и что-то ещё</div>
@@ -119,8 +118,6 @@
                             <option value="fourth">4</option>
                         </select>
                     </div>
-                    </p>
-
 
                     <div class="all-country">
                         <ul>
@@ -279,7 +276,7 @@
 <div class="clear"></div>
 </div>
 
-<div class="footer">
+<footer>
     <div class="left">
         <span>Dr. Soniash Volsky Consult © 2013</span>
     </div>
@@ -290,29 +287,29 @@
             <a href=""></a>
         </span>
     </div>
-</div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</footer>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript">
     $(function(){
 
-        $('select.newselect').addClass('hiden');
-        $('.select').removeClass('hiden');
-        $('.drop').removeClass('hiden');
+        $('select.newselect').addClass('hidden');
+        $('.select').removeClass('hidden');
+        $('.drop').removeClass('hidden');
         $('.select').click(function(){
             $(this).parent('.new_sel').find('.drop').fadeIn('fast');
         });
-        $('*').click(function(event){
+        $('*').click(function(event) {
             var clas = $(this).attr('class');
-            if(clas!='drop'&&clas!='new_sel'&&clas!='select'){
+            if (clas!='drop'&&clas!='new_sel'&&clas!='select') {
                 $(".drop").fadeOut('fast');
             }
             (event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true));
-        })
+        });
 
 
         $('.drop > div').click(function(){
-            var vall = $(this).attr('value')
+            var vall = $(this).attr('value');
             $(this).closest('.new_sel').find('.select').html($(this).html());
             $(this).closest('.new_sel').find('select option:selected').removeAttr("selected");
             $(this).closest('.new_sel').find('select option[value = '+vall+']').attr("selected", "selected");

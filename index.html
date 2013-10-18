@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Документ без названия</title>
-
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-<div class="body">
 <header>
     <nav>
         <div class="table">
@@ -52,10 +50,11 @@
     </div>
     <div class="clear"></div>
 </header>
+<div class="body">
 <div class="clear"></div>
 <div class="intro">
     <div class="table">
-        <div class="left fl">
+        <div class="left">
             <h1>Лечение без границ</h1>
             <div class="border">
                 <p>
@@ -66,38 +65,147 @@
                 </a>
             </div>
         </div>
-        <div class="right fr">
-            <img src="image/intro_r_img.png" width="268" height="165">
+        <div id="drop_form" class="right">
+            <img src="image/intro_r_img.png" width="279" height="165">
 
-            <span class="label">Ваше заболевание</span>
+            <label for="autocom">Ваше заболевание</label>
             <div class="jktu">
                 <div class="con_none active">
-                    <input type="text" name="q" id="autocom"  >
+                    <input type="text" name="q" id="autocom">
+                </div>
+
+                <div class="new_sel con_one">
+                    <div class="select">категория 1</div>
+                    <div class="drop">
+                        <div value="-1" class="check">категория 1</div>
+                        <div value="1">Швейцария</div>
+                        <div value="2">Германия</div>
+                        <div value="3">США</div>
+                        <div value="4">Чехия</div>
+                        <div value="5">Израиль</div>
+                        <div value="6">Испания</div>
+                    </div>
+                    <select class="newselect" name="select" value="first">
+                        <option value="-1" class="none">категория 1</option>
+                        <option value="1" class="Switzerland">Швейцария</option>
+                        <option value="2" class="Germany">Германия</option>
+                        <option value="3" class="Usa">США</option>
+                        <option value="4" class="Czech_Republic">Чехия</option>
+                        <option value="5" class="Israel">Израиль</option>
+                        <option value="6" class="Spain">Испания</option>
+                    </select>
+                </div>
+
+                <div class="new_sel con_two">
+                    <div class="select">категория 2</div>
+                    <div class="drop">
+                        <div value="-1" class="check">категория 1</div>
+                        <div value="1">Швейцария</div>
+                        <div value="2">Германия</div>
+                        <div value="3">США</div>
+                        <div value="4">Чехия</div>
+                        <div value="5">Израиль</div>
+                        <div value="6">Испания</div>
+                    </div>
+                    <select class="newselect" name="select" value="first">
+                        <option value="-1" class="none">категория 1</option>
+                        <option value="1" class="Switzerland">Швейцария</option>
+                        <option value="2" class="Germany">Германия</option>
+                        <option value="3" class="Usa">США</option>
+                        <option value="4" class="Czech_Republic">Чехия</option>
+                        <option value="5" class="Israel">Израиль</option>
+                        <option value="6" class="Spain">Испания</option>
+                    </select>
+                </div>
+
+                <div class="new_sel con_three">
+                    <div class="select">категория 3</div>
+                    <div class="drop">
+                        <div value="-1" class="check">категория 1</div>
+                        <div value="1">Швейцария</div>
+                        <div value="2">Германия</div>
+                        <div value="3">США</div>
+                        <div value="4">Чехия</div>
+                        <div value="5">Израиль</div>
+                        <div value="6">Испания</div>
+                    </div>
+                    <select class="newselect" name="select" value="first">
+                        <option value="-1" class="none">категория 1</option>
+                        <option value="1" class="Switzerland">Швейцария</option>
+                        <option value="2" class="Germany">Германия</option>
+                        <option value="3" class="Usa">США</option>
+                        <option value="4" class="Czech_Republic">Чехия</option>
+                        <option value="5" class="Israel">Израиль</option>
+                        <option value="6" class="Spain">Испания</option>
+                    </select>
+                </div>
+
+                <div class="new_sel con_four">
+                    <div class="select">категория 4</div>
+                    <div class="drop">
+                        <div value="-1" class="check">категория 1</div>
+                        <div value="1">Швейцария</div>
+                        <div value="2">Германия</div>
+                        <div value="3">США</div>
+                        <div value="4">Чехия</div>
+                        <div value="5">Израиль</div>
+                        <div value="6">Испания</div>
+                    </div>
+                    <select class="newselect" name="select" value="first">
+                        <option value="-1" class="none">категория 1</option>
+                        <option value="1" class="Switzerland">Швейцария</option>
+                        <option value="2" class="Germany">Германия</option>
+                        <option value="3" class="Usa">США</option>
+                        <option value="4" class="Czech_Republic">Чехия</option>
+                        <option value="5" class="Israel">Израиль</option>
+                        <option value="6" class="Spain">Испания</option>
+                    </select>
+                </div>
+
+                <div class="new_sel con_five">
+                    <div class="select">категория 5</div>
+                    <div class="drop">
+                        <div value="-1" class="check">категория 1</div>
+                        <div value="1">Швейцария</div>
+                        <div value="2">Германия</div>
+                        <div value="3">США</div>
+                        <div value="4">Чехия</div>
+                        <div value="5">Израиль</div>
+                        <div value="6">Испания</div>
+                    </div>
+                    <select class="newselect" name="select" value="first">
+                        <option value="-1" class="none">категория 1</option>
+                        <option value="1" class="Switzerland">Швейцария</option>
+                        <option value="2" class="Germany">Германия</option>
+                        <option value="3" class="Usa">США</option>
+                        <option value="4" class="Czech_Republic">Чехия</option>
+                        <option value="5" class="Israel">Израиль</option>
+                        <option value="6" class="Spain">Испания</option>
+                    </select>
                 </div>
             </div>
             <span class="label">Направление лечения</span>
 
             <div class="new_sel">
                 <div class="select">Выберите пункт</div>
-                <div class="drop">
-                    <div value="first">Первый пункт asdf asd fasdf </div>
-                    <div value="second" class="check">Второй пункт asdfasdfas asdfasfasdfa</div>
-                    <div value="third">Третий пункт</div>
-                    <div value="fourth">Четвертый пункт</div>
-                    <div value="first">Первый пункт</div>
-                    <div value="second" class="check">Второй пункт</div>
-                    <div value="third">Третий пункт</div>
-                    <div value="fourth">Четвертый пункт</div>
+                <div class="drop primary">
+                    <div value="first" data-option="one">Первый пункт asdf asd fasdf </div>
+                    <div value="second" data-option="two" class="check">Второй пункт asdfasdfas asdfasfasdfa</div>
+                    <div value="third" data-option="three">Третий пункт</div>
+                    <div value="fourth" data-option="four">Четвертый пункт</div>
+                    <div value="first" data-option="one">Первый пункт</div>
+                    <div value="second" data-option="two">Второй пункт</div>
+                    <div value="third" data-option="three">Третий пункт</div>
+                    <div value="fourth" data-option="four">Четвертый пункт</div>
+                    <div value="fifth" data-option="five">5 пункт</div>
                 </div>
                 <select class="newselect" name="select" value="first">
+                    <option value="zero">0</option>
                     <option value="first">1</option>
                     <option value="second">2</option>
                     <option value="third">3</option>
                     <option value="fourth">4</option>
-                    <option value="first">1</option>
-                    <option value="second">2</option>
-                    <option value="third">3</option>
-                    <option value="fourth">4</option>
+                    <option value="fifth">5</option>
                 </select>
             </div>
 
@@ -105,8 +213,8 @@
             <div class="new_sel">
                 <div class="select">Выберите пункт</div>
                 <div class="drop">
-                    <div value="1" class="check">Не имеет значения</div>
-                    <div value="2"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
+                    <div value="zero" class="check">Не имеет значения</div>
+                    <div value="first"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
                     <div value="3"><img src="image/flag/Germany.png" width="16" height="16">Германия</div>
                     <div value="4"><img src="image/flag/Israel.png" width="16" height="16">США</div>
                     <div value="5"><img src="image/flag/Czech Republic.png" width="16" height="16">Чехия</div>
@@ -124,15 +232,10 @@
                 </select>
             </div>
 
-
             <input class="red-btn" type="button" value="Подобрать клиники">
             <div class="result" id="result">
 
             </div>
-
-
-
-
 
         </div>
         <div class="clear"></div>
@@ -140,10 +243,10 @@
 </div>
 <div class="BENEFITS">
     <div class="table">
-        <div class="left fl">
+        <div class="left">
             <img src="image/index_benefits.jpg" width="401" height="300">
         </div>
-        <div class="right fr">
+        <div class="right">
             <span>Мы предлагаем вам:</span>
             <ul>
                 <li><span>Госпитализацию в лучшие клиники</span> в соответствии с профилем заболевания</li>
@@ -239,18 +342,18 @@
 <div class="content_index">
     <div class="table">
         <div class="bg_left"></div>
-        <div class="left fl">
+        <div class="left">
             <a href="" class="selected_clinics">Избранные клиники</a>
             <div class="clinics-box" id="clinics-box">
-                <ul class="">
+                <ul>
                     <li class="klinika clearfix">
-                        <div class="left fl">
+                        <div class="left">
                             <img src="image/artice-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
                             <p class="line">Адрес: <span class="adds">Женева</span></p>
                             <p>Тип: <span class="type">Частная</span></p>
                             <a href="" class="cost"> Уточнить стоимость</a>
                         </div>
-                        <div class="right fr">
+                        <div class="right">
                             <a href="" class="cc-way">Клиника "Женераль 1"</a><br/>
                             <a class="cc-web" href="">Сеть клиник "Женолье" </a>
                             <div class="cc-way_country"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
@@ -260,13 +363,13 @@
                         </div>
                     </li>
                     <li class="klinika clearfix">
-                        <div class="left fl">
+                        <div class="left">
                             <img src="image/artice-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
                             <p class="line">Адрес: <span class="adds">Женева</span></p>
                             <p>Тип: <span class="type">Частная</span></p>
                             <a href="" class="cost"> Уточнить стоимость</a>
                         </div>
-                        <div class="right fr">
+                        <div class="right">
                             <a href="" class="cc-way">Клиника "Женераль 2"</a><br/>
                             <a class="cc-web" href="">Сеть клиник "Женолье" </a>
                             <div class="cc-way_country"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
@@ -276,13 +379,13 @@
                         </div>
                     </li>
                     <li class="klinika clearfix">
-                        <div class="left fl">
+                        <div class="left">
                             <img src="image/artice-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
                             <p class="line">Адрес: <span class="adds">Женева</span></p>
                             <p>Тип: <span class="type">Частная</span></p>
                             <a href="" class="cost"> Уточнить стоимость</a>
                         </div>
-                        <div class="right fr">
+                        <div class="right">
                             <a href="" class="cc-way">Клиника "Женераль 3"</a><br/>
                             <a class="cc-web" href="">Сеть клиник "Женолье" </a>
                             <div class="cc-way_country"><img src="image/flag/Switzerland.png" width="16" height="16">Швейцария</div>
@@ -295,7 +398,7 @@
             </div>
             <a href="" class="in_all_cl">все клиники</a>
         </div>
-        <div class="right fr">
+        <div class="right">
             <a href="" class="diagnostic_programs">Программы диагностики</a>
             <ul>
                 <li><img src="image/check_index.jpg" width="80" height="80"><span>CHECK-UP</span><br><a href="" class="name_check">Заболеваний обмена веществ и ещё что-то для длинны</a>от&nbsp;<span class="cost_check">3245 Евро</span></li>
@@ -350,27 +453,39 @@
 <div class="footer_tp"></div>
 </div>
 
-<div class="footer">
-    <div class="left fl">
+<footer>
+    <div class="left">
         <span>Dr. Soniash Volsky Consult © 2013</span>
     </div>
-    <div class="right fr">
+    <div class="right">
 <span>
 <a href=""></a>
 <a href=""></a>
 <a href=""></a>
 </span>
     </div>
-</div>
-<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
-<!--			<script src="js/jquery.core-ui-select.js"></script>-->
-<script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
-<script src="js/chosen.jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="js/lib/jquery/plugins/jquery.mousewheel.js"></script>
+</footer>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery.dropdown.js"></script>
 <script src="js/js.js"></script>
+
 <script type="text/javascript">
+
+
+    /*		<div class="all-country">
+     <ul>
+     <li id="all" name="all"><label for="id0">ВСЕ СТРАНЫ</label><input type="checkbox" id="id0" name="id0" class="styled" /></li>*/
+    /*			$(".all-country ul li label").click(function(){
+     $(this).parent().addClass("selected");*/
+
+    $(".all-country ul li label").click(function(){
+        $(this).parent('li').toggleClass('selected');
+    });
+
     $( function() {
+
 
         $('#carousel').carouFredSel({
             width: 960,
@@ -410,7 +525,7 @@
             "Scala",
             "Scheme"
         ];
-        $("#autocom").autocomplete({
+        $( "#autocom" ).autocomplete({
             source: availableTags,
             close: function() {
                 $('#result').addClass( "ui-corner-all" );
@@ -421,9 +536,7 @@
             }
         });
 
-
     });
-
 
 </script>
 
