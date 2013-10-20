@@ -58,9 +58,9 @@ jQuery(document).ready(function(){
     $('.select').click(function(){
         $(this).parent('.new_sel').find('.drop').fadeIn('fast');
     });
-    $('*').click(function(event) {
-        var clas = $(this).attr('class');
-        if (clas!='drop'&&clas!='new_sel'&&clas!='select'){
+    $('div').click(function(event) {
+        var divClass = $(this).attr('class');
+        if (divClass != 'drop' && divClass != 'new_sel' && divClass != 'select') {
             $(".drop").fadeOut('fast');
         }
         (event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true));
@@ -68,14 +68,14 @@ jQuery(document).ready(function(){
 
 
     $('.drop > div').click(function(){
-        var vall = $(this).attr('value');
+        var val = $(this).data('value');
         var string = $(this).html();
         var r = /<(\w+)[^>]*>.*<\/\1>/gi;
         string = string.replace(r,"");
 
         $(this).closest('.new_sel').find('.select').html(string);
         $(this).closest('.new_sel').find('select option:selected').removeAttr("selected");
-        $(this).closest('.new_sel').find('select option[value = '+vall+']').attr("selected", "selected");
+        $(this).closest('.new_sel').find('select option[value = '+val+']').attr("selected", "selected");
         $.each($(this).parent().children('div.check'), function(){
             $(this).removeClass('check');
         });
