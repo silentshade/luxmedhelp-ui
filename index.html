@@ -74,7 +74,7 @@
                     <input type="text" name="q" id="autocom">
                 </div>
 
-                <div class="new_sel con_one">
+<!--                 <div class="new_sel con_one">
                     <div class="select">категория 1</div>
                     <div class="drop">
                         <div data-value="-1" class="check">категория 1</div>
@@ -182,13 +182,13 @@
                         <option value="5" class="Israel">Израиль</option>
                         <option value="6" class="Spain">Испания</option>
                     </select>
-                </div>
+                </div> -->
             </div>
             <span class="label">Направление лечения</span>
 
             <div class="new_sel">
                 <div class="select">Выберите пункт</div>
-                <div class="drop primary">
+                <div class="drop">
                     <div data-value="first" data-option="one">Первый пункт asdf asd fasdf </div>
                     <div data-value="second" data-option="two" class="check">Второй пункт asdfasdfas asdfasfasdfa</div>
                     <div data-value="third" data-option="three">Третий пункт</div>
@@ -199,7 +199,7 @@
                     <div data-value="fourth" data-option="four">Четвертый пункт</div>
                     <div data-value="fifth" data-option="five">5 пункт</div>
                 </div>
-                <select class="newselect" name="select">
+                <select class="newselect hidden" name="select">
                     <option value="zero">0</option>
                     <option value="first">1</option>
                     <option value="second">2</option>
@@ -212,7 +212,7 @@
             <span class="label">Предпочитаемая страна лечения </span>
             <div class="new_sel">
                 <div class="select">Выберите пункт</div>
-                <div class="drop">
+                <div data-use-html="true" class="drop">
                     <div data-value="zero" class="check">Не имеет значения</div>
                     <div data-value="first"><img src="image/flags/16/Switzerland.png" width="16" height="16">Швейцария</div>
                     <div data-value="3"><img src="image/flags/16/Germany.png" width="16" height="16">Германия</div>
@@ -221,7 +221,7 @@
                     <div data-value="6"><img src="image/flags/16/Israel.png" width="16" height="16">Израиль</div>
                     <div data-value="7"><img src="image/flags/16/Spain.png" width="16" height="16">Испания</div>
                 </div>
-                <select class="newselect" name="select">
+                <select class="newselect hidden" name="select">
                     <option value="1">Не имеет значения</option>
                     <option value="2">Швейцария</option>
                     <option value="3">Германия</option>
@@ -501,32 +501,14 @@
             next: '#next',
             pagination: '#pager'
         });
-        var availableTags = [
-            "ActionScript",
-            "AppleScript",
-            "Asp",
-            "BASIC",
-            "C",
-            "C++",
-            "Clojure",
-            "COBOL",
-            "ColdFusion",
-            "Erlang",
-            "Fortran",
-            "Groovy",
-            "Haskell",
-            "Java",
-            "JavaScript",
-            "Lisp",
-            "Perl",
-            "PHP",
-            "Python",
-            "Ruby",
-            "Scala",
-            "Scheme"
+
+        window.ailment_treatment_mapping = [
+            {name: 'Онкология', ailments: ['рак','саркома','аденома']},
+            {name: 'Урология', ailments: ['цистит','простатит']},
+            {name: 'Офтальмоталогия', ailments: ['конъюктивит','кератит']}
         ];
-        $( "#autocom" ).autocomplete({
-            source: availableTags,
+        window.autocom_params = {
+            source: $.map(ailment_treatment_mapping, function(el,i){ return el.ailments }),
             close: function() {
                 $('#result').addClass( "ui-corner-all" );
                 var rez = $("#autocom").val();
@@ -534,7 +516,11 @@
                 $('[data-item='+ rez +']').addClass('new')
 
             }
-        });
+        }
+        $( "#autocom" ).autocomplete(autocom_params)
+                       .on('focusout',function(){
+
+                       });
 
     });
 

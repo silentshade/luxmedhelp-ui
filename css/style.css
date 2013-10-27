@@ -800,6 +800,7 @@ footer .left span {
   left: 110px; }
 
 .new_sel .select {
+  white-space: nowrap;
   position: relative;
   width: 220px;
   padding: 5px 9px 1px 9px;
