@@ -11,11 +11,12 @@ jQuery.fn.extend({
       drop.siblings('.select').text(needed.first().text());
     needed.addClass('check');
     
-    var options = drop.siblings('.newselect');
-    options.children().removeAttr('selected')
+    var select = drop.siblings('.newselect');
+    select.children().removeAttr('selected')
            .end()
            .find('[value="'+val+'"]')
            .attr('selected','selected');
+    select.change();
   }
 });
 
@@ -53,23 +54,22 @@ jQuery.fn.extend({
     }
   }
 
-
   $("header .top_b").click(function(){
     $("header nav").slideToggle(300);
   });
 
-  $('.select').click(function(){
+  $('#drop_form').on('click', '.select', function(){
     $(this).parent('.new_sel').find('.drop').fadeIn('fast');
   });
 
-  $('*').click(function(event) {
-    if ($(this).is('.drop, .new_sel, .select')) return false;
+  $(document).on('click', function(event) {
+    if ( $(event.target).is('.drop, .new_sel, .select') ) return false;
     $(".drop").fadeOut('fast');
-    (event.stopPropagation ? event.stopPropagation() : (event.cancelBubble=true));
+    
   });
 
 
-  $('.drop > div').click(function(){
+  $('#drop_form').on('click', '.drop > div', function(){
     var val = $(this).data('value');
     $(this).parents('.new_sel').select_option(val);
   });
