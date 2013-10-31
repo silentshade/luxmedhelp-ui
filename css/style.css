@@ -802,8 +802,8 @@ footer .left span {
 .new_sel .select {
   white-space: nowrap;
   position: relative;
-  width: 220px;
-  padding: 5px 9px 1px 9px;
+  width: 196px;
+  /*padding: 5px 9px 1px 9px;*/
   font-size: 12px;
   line-height: 18px;
   color: #333;
@@ -867,7 +867,7 @@ footer .left span {
   position: absolute;
   left: 172px;
   top: 5px;
-  width: 55px;
+  /*width: 55px;*/
   z-index: 1; }
 
 .new_sel .drop div.check span.fader {
@@ -909,7 +909,7 @@ footer .left span {
     width: 170px; }
 
 .search-box #search-form .new_sel .select {
-  width: 150px; }
+  width: 132px; }
 
 .intro .table .right .jktu {
   position: relative;

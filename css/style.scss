@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: Conv_ProximaNova-Reg;
-  src: font-url('ProximaNova-Reg.eot');
-  src: local("☺"), font-url('ProximaNova-Reg.woff') format("woff"), font-url('ProximaNova-Reg.ttf') format("truetype"), font-url('ProximaNova-Reg.svg') format("svg");
+  src: url("fonts/ProximaNova-Reg.eot");
+  src: local("☺"), url("fonts/ProximaNova-Reg.woff") format("woff"), url("fonts/ProximaNova-Reg.ttf") format("truetype"), url("fonts/ProximaNova-Reg.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: Conv_ProximaNova-Bold;
-  src: font-url('ProximaNova-Bold.eot');
-  src: local("☺"), font-url('ProximaNova-Bold.woff') format("woff"), font-url('ProximaNova-Bold.ttf') format("truetype"), font-url('ProximaNova-Bold.svg') format("svg");
+  src: url("fonts/ProximaNova-Bold.eot");
+  src: local("☺"), url("fonts/ProximaNova-Bold.woff") format("woff"), url("fonts/ProximaNova-Bold.ttf") format("truetype"), url("fonts/ProximaNova-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: Conv_ARIALNB;
-  src: font-url('ARIALNB.eot');
-  src: local("☺"), font-url('ARIALNB.woff') format("woff"), font-url('ARIALNB.ttf') format("truetype"), font-url('ARIALNB.svg') format("svg");
+  src: url("fonts/ARIALNB.eot");
+  src: local("☺"), url("fonts/ARIALNB.woff") format("woff"), url("fonts/ARIALNB.ttf") format("truetype"), url("fonts/ARIALNB.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: Conv_PT_Serif-Web-Italic;
-  src: font-url('PT_Serif-Web-Italic.eot');
-  src: local("☺"), font-url('PT_Serif-Web-Italic.woff') format("woff"), font-url('PT_Serif-Web-Italic.ttf') format("truetype"), font-url('PT_Serif-Web-Italic.svg') format("svg");
+  src: url("fonts/PT_Serif-Web-Italic.eot");
+  src: local("☺"), url("fonts/PT_Serif-Web-Italic.woff") format("woff"), url("fonts/PT_Serif-Web-Italic.ttf") format("truetype"), url("fonts/PT_Serif-Web-Italic.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -154,7 +154,7 @@ html, body {
   border-radius: 3px 3px;
   font-size: 13px;
   color: #88a3bc;
-  background: image-url('select-arrow.png') no-repeat 375px 10px, image-url('select-bg.png') repeat-x;
+  background: url(../image/select-arrow.png) no-repeat 375px 10px, url(../image/select-bg.png) repeat-x;
   overflow: hidden;
   border: 1px solid #dbe6f2;
 }
@@ -174,17 +174,17 @@ html, body {
   border: 1px solid #5fb354;
   border-radius: 3px;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
-  background: image-url('button.png') repeat-x left top;
+  background: url(../image/button.png) repeat-x left top;
   height: 23px;
   padding-top: 9px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
   &:hover {
-    background: image-url('button_h.png') no-repeat center center, image-url('button.png') repeat-x left top;
+    background: url(../image/button_h.png) no-repeat center center, url(../image/button.png) repeat-x left top;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
     color: #ffffff !important;
   }
   &:active {
-    background: image-url('button.png') repeat-x left -33px;
+    background: url(../image/button.png) repeat-x left -33px;
     height: 22px;
     padding-top: 10px;
   }
@@ -203,7 +203,7 @@ html, body {
   border: none;
   cursor: pointer;
   padding-top: 2px;
-  background: image-url('buttons.png') no-repeat 0 0;
+  background: url(../image/buttons.png) no-repeat 0 0;
   &:hover {
     background-position: 0 -45px;
     color: #ffffff !important;
@@ -216,7 +216,7 @@ html, body {
 .blue-btn {
   width: 150px;
   height: 30px;
-  background: image-url('button-comment.png') repeat-x 0 0;
+  background: url(../image/button-comment.png) repeat-x 0 0;
   padding: 6px 0;
   border: 1px solid #06b0e8;
   font-size: 13px;
@@ -225,10 +225,10 @@ html, body {
   cursor: pointer;
   outline: none;
   &:hover {
-    background: image-url('button_h-comment.png') no-repeat center, image-url('button-comment.png') repeat-x 0 0;
+    background: url(../image/button_h-comment.png) no-repeat center, url(../image/button-comment.png) repeat-x 0 0;
   }
   &:active {
-    background: image-url('button-comment.png') repeat-x 0 -28px;
+    background: url(../image/button-comment.png) repeat-x 0 -28px;
     padding: 6px 0;
     height: 30px;
   }
@@ -284,7 +284,7 @@ header {
     }
   }
   .logo {
-    background: #40adc8 image-url('logo.png');
+    background: #40adc8 url(../image/logo.png);
     float: left;
     height: 90px;
     width: 160px;
@@ -301,7 +301,7 @@ header {
     width: 79px;
     display: block;
     float: left;
-    background: image-url('top_b.png') no-repeat center center;
+    background: url(../image/top_b.png) no-repeat center center;
     border-right: 1px solid #e0f2ff;
     visibility: hidden;
     &:hover {
@@ -322,7 +322,7 @@ header {
       font-size: 23px;
       line-height: 16px;
       color: #475564;
-      background: image-url('tel.png') no-repeat center center;
+      background: url(../image/tel.png) no-repeat center center;
       span {
         font-size: 10px;
         display: block;
@@ -380,7 +380,7 @@ header {
       &:before {
         margin-left: 12px;
         margin-right: 10px;
-        content: image-url('breadcr-arrow.png');
+        content: url(../image/breadcr-arrow.png);
       }
       &:first-child:before {
         content: "";
@@ -404,7 +404,7 @@ header {
 /* Intro */
 
 .intro {
-  background: image-url('info_bg.png') repeat-x left top #fefeff;
+  background: url(../image/info_bg.png) repeat-x left top #fefeff;
   height: 550px;
   padding-top: 134px;
   .table {
@@ -417,7 +417,7 @@ header {
       padding-left: 80px;
       padding-right: 120px;
       padding-top: 99px;
-      background: image-url('intro_skay.png') no-repeat 23px 43px;
+      background: url(../image/intro_skay.png) no-repeat 23px 43px;
       h1 {
         font-family: Conv_PT_Serif-Web-Italic, sans-serif;
         font-size: 39px;
@@ -473,7 +473,7 @@ header {
     }
     .button {
       width: 159px;
-      background: image-url('button_left.png') repeat-x left top;
+      background: url(../image/button_left.png) repeat-x left top;
       height: 28px;
       padding-top: 10px;
       margin-left: 0;
@@ -490,7 +490,7 @@ header {
 
 .benefits {
   height: 382px;
-  background: #002d40 image-url('benefits_bg.png') no-repeat center 0;
+  background: #002d40 url(../image/benefits_bg.png) no-repeat center 0;
   padding-top: 78px;
   .table .right {
     width: 480px;
@@ -515,7 +515,7 @@ header {
         margin-top: 4px;
         &:before {
           content: '';
-          background: image-url('benefis_li.png');
+          background: url(../image/benefis_li.png);
           width: 17px;
           height: 14px;
           position: absolute;
@@ -593,7 +593,7 @@ header {
     }
   }
   #prev, #next {
-    background: image-url('slider_nav.png') no-repeat;
+    background: url(../image/slider_nav.png) no-repeat;
     display: block;
     height: 38px;
     width: 21px;
@@ -627,7 +627,7 @@ header {
       font-style: italic;
       font-size: 13px;
       line-height: 20px;
-      background: image-url('rev_index.png') no-repeat right 68px;
+      background: url(../image/rev_index.png) no-repeat right 68px;
       &:first-child {
         margin-left: 14px;
       }
@@ -682,7 +682,7 @@ header {
   width: 165px;
   border-top: 1px solid #e0f2ff;
   border-bottom: 1px solid #e0f2ff;
-  background: image-url('sel_clin.png') left top no-repeat;
+  background: url(../image/sel_clin.png) left top no-repeat;
   letter-spacing: 1px;
 }
 
@@ -884,7 +884,7 @@ footer {
         width: 26px;
         float: left;
         margin: 0 5px 0 0;
-        background: image-url('social.png') no-repeat -31px 0;
+        background: url(../image/social.png) no-repeat -31px 0;
         &:hover {
           background-position: -30px -25px;
         }
@@ -964,14 +964,14 @@ footer {
   .select {
     white-space: nowrap;
     position: relative;
-    width: 220px;
-    padding: 5px 9px 1px 9px;
+    width: 196px;
+    /*padding: 5px 9px 1px 9px;*/
     font-size: 12px;
     line-height: 18px;
     color: #333;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     cursor: pointer;
-    background: image-url('select-bg.png') repeat-x left bottom;
+    background: url(../image/select-bg.png) repeat-x left bottom;
     border: 1px solid #dbe6f2;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
@@ -1022,23 +1022,23 @@ footer {
 }
 
 .fader {
-  background: image-url('fader.png') repeat-y left top;
+  background: url("../image/fader.png") repeat-y left top;
   content: " ";
   height: 25px;
   position: absolute;
   left: 172px;
   top: 5px;
-  width: 55px;
+  /*width: 55px;*/
   z-index: 1;
 }
 
 .new_sel .drop {
   div {
     &.check span.fader {
-      background-image: image-url('fader-active.png') !important;
+      background-image: url("../image/fader-active.png") !important;
     }
     &:hover .fader {
-      background-image: image-url('fader-hover.png');
+      background-image: url("../image/fader-hover.png");
     }
   }
   > div {
@@ -1064,7 +1064,7 @@ footer {
 }
 
 .new_sel .select:after {
-  background: image-url('new_style.png') no-repeat;
+  background: url(../image/new_style.png) no-repeat;
   height: 30px;
   width: 37px;
   position: absolute;
@@ -1080,7 +1080,7 @@ footer {
     width: 170px;
   }
   .select {
-    width: 150px;
+    width: 132px;
   }
 }
 
@@ -1169,7 +1169,7 @@ footer {
   border: 1px solid #d4e6ec;
   border-bottom: none;
   padding: 15px 0 0 12px;
-  background: image-url('v2-bg.png') repeat-x 0 0;
+  background: url(../image/v2-bg.png) repeat-x 0 0;
   height: 318px;
   ul {
     list-style: none;
@@ -1211,7 +1211,7 @@ footer {
     display: block;
     z-index: 5;
     position: relative;
-    background: image-url('v2-gradient.png') repeat-y 0 0;
+    background: url(../image/v2-gradient.png) repeat-y 0 0;
     padding-top: 1px;
     padding-bottom: 3px;
   }
@@ -1799,15 +1799,15 @@ footer {
       border: 1px solid #06b0e8;
       border-radius: 3px;
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
-      background: image-url('blue-button.png') repeat-x left top;
+      background: url(../image/blue-button.png) repeat-x left top;
       height: 40px;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
       &:hover {
-        background: image-url('blue-button-hover.png') no-repeat center center, image-url('blue-button.png') repeat-x left top;
+        background: url(../image/blue-button-hover.png) no-repeat center center, url(../image/blue-button.png) repeat-x left top;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
       }
       &:active {
-        background: image-url('blue-button.png') repeat-x 0 -38px;
+        background: url(../image/blue-button.png) repeat-x 0 -38px;
         height: 40px;
         padding-top: 4px;
       }
@@ -1820,7 +1820,7 @@ footer {
       height: 28px;
     }
     .select {
-      background: image-url('select-arrow.png') no-repeat 336px 10px, image-url('select-bg.png') repeat-x;
+      background: url(../image/select-arrow.png) no-repeat 336px 10px, url(../image/select-bg.png) repeat-x;
     }
   }
 }
@@ -2073,7 +2073,7 @@ footer {
         border: 1px solid #5fb354;
         border-radius: 3px;
         text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
-        background: image-url('green-btn.png') repeat-x left top;
+        background: url(../image/green-btn.png) repeat-x left top;
         height: 40px;
       }
       label span {
@@ -2081,11 +2081,11 @@ footer {
       }
       .fsend {
         &:hover {
-          background: image-url('button_h.png') no-repeat center center, image-url('green-btn.png') repeat-x left top;
+          background: url(../image/button_h.png) no-repeat center center, url(../image/green-btn.png) repeat-x left top;
           box-shadow: none;
         }
         &:active {
-          background: image-url('green-btn.png') repeat-x 0 -38px;
+          background: url(../image/green-btn.png) repeat-x 0 -38px;
           height: 40px;
           padding-top: 4px;
         }
@@ -2627,7 +2627,7 @@ footer {
     .select {
       width: 116px;
       white-space: nowrap;
-      background: image-url('select-arrow.png') no-repeat 137px 10px, image-url('select-bg.png') repeat-x;
+      background: url(../image/select-arrow.png) no-repeat 137px 10px, url(../image/select-bg.png) repeat-x;
     }
     margin: 7px 0 5px 0;
   }
@@ -2764,7 +2764,7 @@ footer {
 }
 
 .klinika .left .cost:hover, .clinic-left-side .left .cost:hover {
-  background: image-url('green-btn28.png') repeat-x 0 0;
+  background: url(../image/green-btn28.png) repeat-x 0 0;
   border: 1px solid #5fb354;
   color: #FFFFFF !important;
   border-radius: 3px 3px;
@@ -2774,7 +2774,7 @@ footer {
 }
 
 .klinika .left .cost:active, .clinic-left-side .left .cost:active {
-  background: image-url('green-btn28.png') repeat-x 0 -28px;
+  background: url(../image/green-btn28.png) repeat-x 0 -28px;
   border: 1px solid #518e0a;
   color: #FFFFFF;
   border-radius: 3px 3px;

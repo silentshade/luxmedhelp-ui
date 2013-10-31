@@ -58,18 +58,18 @@ jQuery.fn.extend({
     $("header nav").slideToggle(300);
   });
 
-  $('#drop_form').on('click', '.select', function(){
+  $('#drop_form, #search-form').on('click', '.select', function(){
     $(this).parent('.new_sel').find('.drop').fadeIn('fast');
   });
 
   $(document).on('click', function(event) {
-    if ( $(event.target).is('.drop, .new_sel, .select') ) return false;
+    if ( $(event.target).is('.drop, .new_sel, .select, .fader') ) return false;
     $(".drop").fadeOut('fast');
     
   });
 
 
-  $('#drop_form').on('click', '.drop > div', function(){
+  $('#drop_form, #search-form').on('click', '.drop > div', function(){
     var val = $(this).data('value');
     $(this).parents('.new_sel').select_option(val);
   });
