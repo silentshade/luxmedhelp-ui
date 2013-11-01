@@ -719,13 +719,13 @@ footer .right {
   margin-left: 160px;
   background-color: #002637; }
 
-footer .right span {
+footer .right .social {
   width: 93px;
   display: block;
   text-align: right;
   margin: 32px 0 0 217px; }
 
-footer .right span a {
+footer .right .social a {
   display: block;
   height: 25px;
   width: 26px;
@@ -733,19 +733,19 @@ footer .right span a {
   margin: 0 5px 0 0;
   background: url(../image/social.png) no-repeat -31px 0; }
 
-footer .right span a:hover {
+footer .right .social a:hover {
   background-position: -30px -25px; }
 
-footer .right span a:first-child {
+footer .right .social a.soc-vk {
   background-position: 0 0; }
 
-footer .right span a:first-child:hover {
+footer .right .social a.soc-vk:hover {
   background-position: 0 -25px; }
 
-footer .right span a:last-child {
+footer .right .social a.soc-tw {
   background-position: -61px 0; }
 
-footer .right span a:last-child:hover {
+footer .right .social a.soc-tw:hover {
   background-position: -60px -25px; }
 
 footer .left span {
