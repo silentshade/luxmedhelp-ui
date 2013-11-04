@@ -389,7 +389,7 @@
     window.make_input = function(){
       var html =  '<div class="jktu ailments">';
           html += '<div class="con_none active">';
-          html += '<input type="text" name="q" id="autocom">';
+          html += '<input type="text" name="ailment" id="autocom">';
           html += '</div></div>';
       var el = $(html);
       el.find('#autocom').autocomplete(autocom_params);
@@ -405,7 +405,7 @@
             html += '<div data-value="'+opt+'">'+opt+'</div>';
           });
           html += '</div>';
-          html += '<select class="newselect hidden" name="select">';
+          html += '<select class="newselect hidden" name="ailment">';
           $.each(options_for_select(scope), function(i,opt){
             html += '<option value="'+opt+'">'+opt+'</option>';
           });
