@@ -70,8 +70,26 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  min-width: 960px;
+  width: 100%;
   color: #475564; }
+
+.page-container {
+  position: relative;
+  overflow: hidden;
+  min-width: 960px;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 90px; /* Height of the footer */
+  min-height: 300px;
+}
 
 .common {
   font-family: Conv_ProximaNova-Reg, sans-serif;
@@ -140,11 +158,11 @@ html, body {
   padding-top: 9px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19); }
   .button:hover {
-    background: url(../image/button_h.png) no-repeat center center, url(../image/button.png) repeat-x left top;
+    background: url(../image/button_h.png) no-repeat center center, url(../image/button.png) repeat-x left top !important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
     color: #ffffff !important; }
   .button:active {
-    background: url(../image/button.png) repeat-x left -33px;
+    background: url(../image/button.png) repeat-x left -33px !important;
     height: 22px;
     padding-top: 10px; }
 
@@ -168,7 +186,12 @@ html, body {
   color: #ffffff !important; }
 
 .red-btn:active {
-  background-position: 0 -90px; }
+  background-position: 0 -90px; 
+  outline: none;
+}
+.red-btn:focus {
+  outline: none;
+}
 
 .blue-btn {
   width: 150px;
@@ -389,8 +412,8 @@ header {
   .intro .table .button {
     width: 159px;
     background: url(../image/button_left.png) repeat-x left top;
-    height: 28px;
-    padding-top: 10px;
+    height: 25px;
+    padding-top: 8px;
     margin-left: 0;
     margin-top: 32px; }
   .intro .table .select {
@@ -696,10 +719,13 @@ header {
 /* Testimonials end */
 /* Footer */
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
   height: 90px;
-  margin-top: -90px;
   background: #CCC;
-  position: relative; }
+}
 
 footer .left {
   position: absolute;
@@ -856,7 +882,7 @@ footer .left span {
   font-family: Conv_ProximaNova-Reg, sans-serif;
   font-size: 13px;
   height: 21px;
-  padding: 10px 10px 10px 18px;
+  padding: 6px 10px 6px 18px;
   width: 2000px;
   position: relative; }
 
@@ -975,7 +1001,7 @@ footer .left span {
   width: 178px;
   border: 1px solid #d4e6ec;
   border-bottom: none;
-  padding: 15px 0 0 12px;
+  padding: 15px 4px 0 8px;
   background: url(../image/v2-bg.png) repeat-x 0 0;
   height: 318px; }
   .help-box ul {
@@ -1046,6 +1072,8 @@ footer .left span {
 .articles-solo .table .center .img1 {
   float: right;
   margin: 10px; }
+.articles-solo .table .center .img2 {
+  margin-bottom: 10px; }
 .articles-solo .table .center p {
   line-height: 20px;
   margin: 0 10px 10px 0; }
@@ -1164,8 +1192,10 @@ footer .left span {
   margin-bottom: 13px; }
 
 .clinic-solo .clinic-left-side > .left {
-  width: 190px;
-  height: 200px; }
+  width: 160px;
+  height: 200px;
+  padding-right: 30px;
+}
 
 /*------------------------END--clinic-solo------------------------------*/
 /*-----------------------------clinic-network------------------------------*/
@@ -2269,6 +2299,10 @@ footer .left span {
 .search-box #search-form p {
   margin: 0; }
 
+.search-box #search-form .red-btn {
+  letter-spacing: 0.2px;
+}
+
 .search-box #search-form .sel-margin .styled {
   width: 160px;
   height: 28px;
@@ -2314,6 +2348,11 @@ footer .left span {
 .search-box #search-form .all-country ul li img {
   float: left;
   margin-right: 9px; }
+
+.search-box #search-form .all-country input[type="checkbox"] {
+  float: right;
+  margin-right: 8px;
+}  
 
 /*------------------------END--search-box------------------------------*/
 /*-----------------------------check-up------------------------------*/
