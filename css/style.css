@@ -1171,8 +1171,10 @@ footer .left span {
   margin-bottom: 13px; }
 
 .clinic-solo .clinic-left-side > .left {
-  width: 190px;
-  height: 200px; }
+  width: 160px;
+  height: 200px;
+  padding-right: 30px;
+}
 
 /*------------------------END--clinic-solo------------------------------*/
 /*-----------------------------clinic-network------------------------------*/
