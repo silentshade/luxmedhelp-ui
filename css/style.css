@@ -2324,6 +2324,11 @@ footer .left span {
   float: left;
   margin-right: 9px; }
 
+.search-box #search-form .all-country input[type="checkbox"] {
+  float: right;
+  margin-right: 8px;
+}  
+
 /*------------------------END--search-box------------------------------*/
 /*-----------------------------check-up------------------------------*/
 .check-up {
