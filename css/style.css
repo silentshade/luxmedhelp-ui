@@ -1051,6 +1051,8 @@ footer .left span {
 .articles-solo .table .center .img1 {
   float: right;
   margin: 10px; }
+.articles-solo .table .center .img2 {
+  margin-bottom: 10px; }
 .articles-solo .table .center p {
   line-height: 20px;
   margin: 0 10px 10px 0; }
