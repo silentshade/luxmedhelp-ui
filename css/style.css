@@ -168,7 +168,12 @@ html, body {
   color: #ffffff !important; }
 
 .red-btn:active {
-  background-position: 0 -90px; }
+  background-position: 0 -90px; 
+  outline: none;
+}
+.red-btn:focus {
+  outline: none;
+}
 
 .blue-btn {
   width: 150px;
