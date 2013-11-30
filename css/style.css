@@ -2278,6 +2278,10 @@ footer .left span {
 .search-box #search-form p {
   margin: 0; }
 
+.search-box #search-form .red-btn {
+  letter-spacing: 0.2px;
+}
+
 .search-box #search-form .sel-margin .styled {
   width: 160px;
   height: 28px;
