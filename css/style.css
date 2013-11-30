@@ -140,11 +140,11 @@ html, body {
   padding-top: 9px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19); }
   .button:hover {
-    background: url(../image/button_h.png) no-repeat center center, url(../image/button.png) repeat-x left top;
+    background: url(../image/button_h.png) no-repeat center center, url(../image/button.png) repeat-x left top !important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
     color: #ffffff !important; }
   .button:active {
-    background: url(../image/button.png) repeat-x left -33px;
+    background: url(../image/button.png) repeat-x left -33px !important;
     height: 22px;
     padding-top: 10px; }
 
@@ -389,8 +389,8 @@ header {
   .intro .table .button {
     width: 159px;
     background: url(../image/button_left.png) repeat-x left top;
-    height: 28px;
-    padding-top: 10px;
+    height: 25px;
+    padding-top: 8px;
     margin-left: 0;
     margin-top: 32px; }
   .intro .table .select {
