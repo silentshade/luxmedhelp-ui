@@ -109,14 +109,14 @@ html, body {
       font-size: 30px;
       font-family: Conv_ProximaNova-Bold, sans-serif;
       font-weight: normal;
-      margin: 0;
+      margin: 0 0 3px;
       line-height: 30px; }
     .common .table > .center h3 {
       font-size: 18px;
       font-family: Conv_ProximaNova-Reg, sans-serif;
       font-weight: normal;
       margin: -5px 5px 17px 0;
-      padding-bottom: 11px;
+      padding-bottom: 14px;
       border-bottom: 1px solid #e0f2ff;
       line-height: 20px; }
   .common .table > .right {
@@ -609,9 +609,9 @@ header {
   font-size: 14px;
   line-height: 20px;
   background: #fff;
-  padding-left: 17px;
+  padding-left: 20px;
   color: #475564;
-  width: 360px; }
+  width: 356px; }
 
 .cc-way_country img {
   margin: -1px 5px 0 -1px; }
@@ -829,10 +829,10 @@ footer .left span {
   white-space: nowrap;
   position: relative;
   width: 196px;
-  /*padding: 5px 9px 1px 9px;*/
+  padding: 5px 9px 1px 9px;
   font-size: 12px;
   line-height: 18px;
-  color: #333;
+  /*color: #333;*/
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   cursor: pointer;
   background: url(../image/select-bg.png) repeat-x left bottom;
@@ -868,7 +868,8 @@ footer .left span {
 
 .new_sel .select:hover,
 .new_sel .drop:hover {
-  color: #333; }
+  /*color: #333; */
+}
 
 .drop {
   overflow: hidden;
@@ -884,7 +885,9 @@ footer .left span {
   height: 21px;
   padding: 6px 10px 6px 18px;
   width: 2000px;
-  position: relative; }
+  position: relative; 
+  color: #88a3bc;
+}
 
 .fader {
   background: url("../image/fader.png") repeat-y left top;
@@ -935,7 +938,9 @@ footer .left span {
     width: 170px; }
 
 .search-box #search-form .new_sel .select {
-  width: 132px; }
+  width: 132px; 
+  color: #88a3bc  
+}
 
 .intro .table .right .jktu {
   position: relative;
@@ -1073,7 +1078,8 @@ footer .left span {
   float: right;
   margin: 10px; }
 .articles-solo .table .center .img2 {
-  margin-bottom: 10px; }
+  margin: 4px 0 16px; 
+}
 .articles-solo .table .center p {
   line-height: 20px;
   margin: 0 10px 10px 0; }
@@ -1204,7 +1210,7 @@ footer .left span {
   font-family: Conv_ProximaNova-Bold, sans-serif;
   font-weight: normal;
   border: none;
-  margin: 0;
+  margin: 6px 0 4px 0px;
   padding: 0; }
 .clinic-network .table .center .cc-icountry {
   margin: 1px 5px 0 0;
@@ -1228,8 +1234,11 @@ footer .left span {
   font-weight: normal;
   margin: 0 0 12px 0; }
 
-.company .table .center h4 span {
-  font-size: 14px; }
+.company .table .center h4 .all_caps {
+  text-transform: uppercase;
+  font-size: 14px; 
+  letter-spacing: 0.3px;
+}
 
 .company .table .center p {
   font-size: 14px;
@@ -1237,6 +1246,12 @@ footer .left span {
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 20px; }
+.company .table .center .all_caps {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
 
 /*------------------END--------COMPANY------------------------------*/
 /*-----------------------------CONTACTS------------------------------*/
@@ -1286,7 +1301,7 @@ footer .left span {
 #clinics-box ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 32px 0 0; }
 
 .country .table .center .country-bimg {
   margin: 3px 0 30px -190px;
@@ -1926,6 +1941,7 @@ footer .left span {
   padding-bottom: 20px; }
 
 .prices .table .center .quote {
+  margin-top: 10px;
   font-family: Georgia, serif;
   font-style: italic; }
 
@@ -2156,8 +2172,8 @@ footer .left span {
   margin: 29px 0 0 1px; }
 
 .programs .table .center h2 {
-  padding-bottom: 20px;
-  margin: 7px 0 14px 0;
+  padding-bottom: 13px;
+  margin: 1px 0 14px 0;
   border-bottom: 1px solid #e0f2ff; }
 
 .programs .table .center i {
@@ -2165,6 +2181,10 @@ footer .left span {
 
 .programs .table .center p {
   margin: 10px 0 0 0; }
+
+.programs .table .center .line {
+  margin-top: 0;
+}
 
 .programs .table .center h5 {
   font-size: 18px;
@@ -2205,10 +2225,12 @@ footer .left span {
   font-size: 18px;
   font-family: Conv_ARIALNB, sans-serif;
   text-align: center;
-  padding-left: 10px; }
+  padding-left: 10px; 
+  margin: 2px 0 0px;
+  padding-bottom: 4px;}
 
 .programs-country #clinics-box {
-  margin: 39px 0 0 0; }
+  margin: 32px 0 0 0; }
 
 .programs-country #clinics-box ul li {
   padding-bottom: 45px; }
@@ -2332,7 +2354,9 @@ footer .left span {
   cursor: pointer;
   width: 110px;
   display: inline-block; }
-
+.search-box #search-form .all-country #all label {
+  width: 135px;
+}
 .search-box #search-form .all-country ul li:first-child {
   font-size: 11px;
   font-family: Conv_ProximaNova-Bold, sans-serif;
@@ -2354,6 +2378,41 @@ footer .left span {
   margin-right: 8px;
 }  
 
+/****/
+input[type="checkbox"] {
+  display:none;            
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  float: right;
+  height: 13px;
+  width: 13px;
+  /*margin: 0 5px -3px 0;*/
+  background-image: url(../image/checkbox.png);
+  background-position: -3px -4px;
+  background-repeat: no-repeat;
+}
+input[type="checkbox"]:hover + label:before,
+input[type="checkbox"] + label:hover:before {
+  background-position: -3px -29px;
+}
+input[type="checkbox"] + label::before {
+  background-position: -3px -4px;    
+}
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:checked + label:before {
+  background-position: -3px -54px;
+}
+input[type="checkbox"]:checked:hover + label::before,
+input[type="checkbox"]:checked:hover + label:before,
+input[type="checkbox"]:checked + label:hover::before,
+input[type="checkbox"]:checked + label:hover:before {
+  background-position: -3px -79px;
+}
 /*------------------------END--search-box------------------------------*/
 /*-----------------------------check-up------------------------------*/
 .check-up {
@@ -2403,11 +2462,11 @@ footer .left span {
   .clinic-left-side .left .cc-thumb {
     float: none;
     margin-top: 4px;
-    margin-bottom: 16px; }
+    margin-bottom: 10px; }
   .klinika .left p,
   .clinic-left-side .left p {
     margin: 0;
-    padding: 0 0 5px 0;
+    padding: 0 0 8px 0;
     font-family: Conv_ProximaNova-Bold, sans-serif;
     font-weight: normal;
     font-size: 13px; }
@@ -2417,7 +2476,7 @@ footer .left span {
   .klinika .left .line,
   .clinic-left-side .left .line {
     border-bottom: 1px solid #e0f2ff;
-    margin: 3px 0 8px 0; }
+    margin: 3px 0 5px 0; }
   .klinika .left .cost,
   .clinic-left-side .left .cost {
     color: #32a7c4;
@@ -2452,7 +2511,7 @@ footer .left span {
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2); }
 
 .klinika {
-  padding-bottom: 55px !important;
+  padding-bottom: 44px !important;
   min-height: 200px;
   margin-bottom: 35px;
   width: 540px;
