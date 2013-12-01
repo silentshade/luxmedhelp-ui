@@ -109,14 +109,14 @@ html, body {
       font-size: 30px;
       font-family: Conv_ProximaNova-Bold, sans-serif;
       font-weight: normal;
-      margin: 0;
+      margin: 0 0 3px;
       line-height: 30px; }
     .common .table > .center h3 {
       font-size: 18px;
       font-family: Conv_ProximaNova-Reg, sans-serif;
       font-weight: normal;
       margin: -5px 5px 17px 0;
-      padding-bottom: 11px;
+      padding-bottom: 14px;
       border-bottom: 1px solid #e0f2ff;
       line-height: 20px; }
   .common .table > .right {
