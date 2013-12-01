@@ -832,7 +832,7 @@ footer .left span {
   padding: 5px 9px 1px 9px;
   font-size: 12px;
   line-height: 18px;
-  color: #333;
+  /*color: #333;*/
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   cursor: pointer;
   background: url(../image/select-bg.png) repeat-x left bottom;
@@ -868,7 +868,8 @@ footer .left span {
 
 .new_sel .select:hover,
 .new_sel .drop:hover {
-  color: #333; }
+  /*color: #333; */
+}
 
 .drop {
   overflow: hidden;
