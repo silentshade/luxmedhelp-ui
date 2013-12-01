@@ -1235,6 +1235,7 @@ footer .left span {
   margin: 0 0 12px 0; }
 
 .company .table .center h4 .all_caps {
+  text-transform: uppercase;
   font-size: 14px; 
   letter-spacing: 0.3px;
 }
@@ -1246,6 +1247,7 @@ footer .left span {
   margin-bottom: 10px;
   line-height: 20px; }
 .company .table .center .all_caps {
+  text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.3px;
 }
