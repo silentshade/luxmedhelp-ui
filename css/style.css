@@ -829,7 +829,7 @@ footer .left span {
   white-space: nowrap;
   position: relative;
   width: 196px;
-  /*padding: 5px 9px 1px 9px;*/
+  padding: 5px 9px 1px 9px;
   font-size: 12px;
   line-height: 18px;
   color: #333;
@@ -884,7 +884,9 @@ footer .left span {
   height: 21px;
   padding: 6px 10px 6px 18px;
   width: 2000px;
-  position: relative; }
+  position: relative; 
+  color: #88a3bc;
+}
 
 .fader {
   background: url("../image/fader.png") repeat-y left top;
@@ -935,7 +937,9 @@ footer .left span {
     width: 170px; }
 
 .search-box #search-form .new_sel .select {
-  width: 132px; }
+  width: 132px; 
+  color: #88a3bc  
+}
 
 .intro .table .right .jktu {
   position: relative;
