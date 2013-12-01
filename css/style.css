@@ -609,9 +609,9 @@ header {
   font-size: 14px;
   line-height: 20px;
   background: #fff;
-  padding-left: 17px;
+  padding-left: 20px;
   color: #475564;
-  width: 360px; }
+  width: 356px; }
 
 .cc-way_country img {
   margin: -1px 5px 0 -1px; }
@@ -1078,7 +1078,8 @@ footer .left span {
   float: right;
   margin: 10px; }
 .articles-solo .table .center .img2 {
-  margin-bottom: 10px; }
+  margin: 4px 0 16px; 
+}
 .articles-solo .table .center p {
   line-height: 20px;
   margin: 0 10px 10px 0; }
@@ -1298,7 +1299,7 @@ footer .left span {
 #clinics-box ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 32px 0 0; }
 
 .country .table .center .country-bimg {
   margin: 3px 0 30px -190px;
@@ -1938,6 +1939,7 @@ footer .left span {
   padding-bottom: 20px; }
 
 .prices .table .center .quote {
+  margin-top: 10px;
   font-family: Georgia, serif;
   font-style: italic; }
 
@@ -2168,8 +2170,8 @@ footer .left span {
   margin: 29px 0 0 1px; }
 
 .programs .table .center h2 {
-  padding-bottom: 20px;
-  margin: 7px 0 14px 0;
+  padding-bottom: 13px;
+  margin: 1px 0 14px 0;
   border-bottom: 1px solid #e0f2ff; }
 
 .programs .table .center i {
@@ -2177,6 +2179,10 @@ footer .left span {
 
 .programs .table .center p {
   margin: 10px 0 0 0; }
+
+.programs .table .center .line {
+  margin-top: 0;
+}
 
 .programs .table .center h5 {
   font-size: 18px;
@@ -2217,10 +2223,12 @@ footer .left span {
   font-size: 18px;
   font-family: Conv_ARIALNB, sans-serif;
   text-align: center;
-  padding-left: 10px; }
+  padding-left: 10px; 
+  margin: 2px 0 0px;
+  padding-bottom: 4px;}
 
 .programs-country #clinics-box {
-  margin: 39px 0 0 0; }
+  margin: 32px 0 0 0; }
 
 .programs-country #clinics-box ul li {
   padding-bottom: 45px; }
@@ -2452,11 +2460,11 @@ input[type="checkbox"]:checked + label:hover:before {
   .clinic-left-side .left .cc-thumb {
     float: none;
     margin-top: 4px;
-    margin-bottom: 16px; }
+    margin-bottom: 10px; }
   .klinika .left p,
   .clinic-left-side .left p {
     margin: 0;
-    padding: 0 0 5px 0;
+    padding: 0 0 8px 0;
     font-family: Conv_ProximaNova-Bold, sans-serif;
     font-weight: normal;
     font-size: 13px; }
@@ -2466,7 +2474,7 @@ input[type="checkbox"]:checked + label:hover:before {
   .klinika .left .line,
   .clinic-left-side .left .line {
     border-bottom: 1px solid #e0f2ff;
-    margin: 3px 0 8px 0; }
+    margin: 3px 0 5px 0; }
   .klinika .left .cost,
   .clinic-left-side .left .cost {
     color: #32a7c4;
@@ -2501,7 +2509,7 @@ input[type="checkbox"]:checked + label:hover:before {
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2); }
 
 .klinika {
-  padding-bottom: 55px !important;
+  padding-bottom: 44px !important;
   min-height: 200px;
   margin-bottom: 35px;
   width: 540px;
