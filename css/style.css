@@ -2332,7 +2332,9 @@ footer .left span {
   cursor: pointer;
   width: 110px;
   display: inline-block; }
-
+.search-box #search-form .all-country #all label {
+  width: 135px;
+}
 .search-box #search-form .all-country ul li:first-child {
   font-size: 11px;
   font-family: Conv_ProximaNova-Bold, sans-serif;
@@ -2354,6 +2356,41 @@ footer .left span {
   margin-right: 8px;
 }  
 
+/****/
+input[type="checkbox"] {
+  display:none;            
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  float: right;
+  height: 13px;
+  width: 13px;
+  /*margin: 0 5px -3px 0;*/
+  background-image: url(../image/checkbox.png);
+  background-position: -3px -4px;
+  background-repeat: no-repeat;
+}
+input[type="checkbox"]:hover + label:before,
+input[type="checkbox"] + label:hover:before {
+  background-position: -3px -29px;
+}
+input[type="checkbox"] + label::before {
+  background-position: -3px -4px;    
+}
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:checked + label:before {
+  background-position: -3px -54px;
+}
+input[type="checkbox"]:checked:hover + label::before,
+input[type="checkbox"]:checked:hover + label:before,
+input[type="checkbox"]:checked + label:hover::before,
+input[type="checkbox"]:checked + label:hover:before {
+  background-position: -3px -79px;
+}
 /*------------------------END--search-box------------------------------*/
 /*-----------------------------check-up------------------------------*/
 .check-up {
