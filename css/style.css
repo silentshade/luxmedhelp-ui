@@ -1233,8 +1233,10 @@ footer .left span {
   font-weight: normal;
   margin: 0 0 12px 0; }
 
-.company .table .center h4 span {
-  font-size: 14px; }
+.company .table .center h4 .all_caps {
+  font-size: 14px; 
+  letter-spacing: 0.3px;
+}
 
 .company .table .center p {
   font-size: 14px;
@@ -1242,6 +1244,11 @@ footer .left span {
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 20px; }
+.company .table .center .all_caps {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
 
 /*------------------END--------COMPANY------------------------------*/
 /*-----------------------------CONTACTS------------------------------*/
