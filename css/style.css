@@ -200,12 +200,12 @@ html, body {
 .button:active {
     background: url(../image/button.png) repeat-x left -33px !important;
     height: 22px;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
 header a.button {
-  float: right;
-  margin-left: 0;
+    float: right;
+    margin-left: 0;
 }
 
 .red-btn {
@@ -365,21 +365,25 @@ header .tel .all_rus {
     font-size: 23px;
     line-height: 16px;
     color: #475564;
-    background: url(../image/tel.png) no-repeat center center; }
-    header .tel .all_rus span {
-      font-size: 10px;
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: Conv_ProximaNova-Reg, sans-serif;
-      letter-spacing: 0.2ex; }
-  header .tel .city {
+    background: url(../image/tel.png) no-repeat center center;
+}
+
+header .tel .all_rus span {
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Conv_ProximaNova-Reg, sans-serif;
+    letter-spacing: 0.2ex;
+}
+
+header .tel .city {
     width: 123px;
     height: 35px;
     float: left;
     margin-top: 28px;
     margin-bottom: 15px;
-    margin-left: 0px;
+    margin-left: 0;
     text-align: right;
     color: #19a5af;
     font-family: Conv_ProximaNova-Reg, sans-serif;
@@ -821,11 +825,11 @@ header .tel .city span {
 }
 
 .content_index .table .right ul li img {
-/*  border: 6px solid #FFF;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(49, 67, 88, 0.2);
-  float: left;
-  margin-right: 10px;*/ 
+    /*  border: 6px solid #FFF;
+      border-radius: 50%;
+      box-shadow: 0 0 1px 0 rgba(49, 67, 88, 0.2);
+      float: left;
+      margin-right: 10px;*/
 }
 
 .name_check {
@@ -1066,8 +1070,9 @@ footer .left span {
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
 }
+
 .home .new_sel .select {
-  width: 219px;
+    width: 219px;
 }
 
 .new_sel .drop {
@@ -1182,8 +1187,8 @@ footer .left span {
 }
 
 .search-box #search-form .new_sel .select {
-  width: 153px; 
-  color: #88a3bc  
+    width: 153px;
+    color: #88a3bc;
 }
 
 .intro .table .right .jktu {
@@ -2968,9 +2973,10 @@ input[type="checkbox"] + label:before {
     height: 13px;
     width: 13px;
     /*margin: 0 5px -3px 0;*/
-    background-image: url(../image/checkbox.png);
+    background: url(../image/checkbox.png) no-repeat -3px -4px;
+    /*background-image: url(../image/checkbox.png);
     background-position: -3px -4px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 input[type="checkbox"]:hover + label:before,
@@ -3189,44 +3195,46 @@ input[type="checkbox"]:checked + label:hover:before {
 
 /* Klinika block end*/
 
-
 /*ClinicsNetwork*/
 .clinics #clinics-box h4 {
-  padding-bottom: 11px;
-  font-size: 18px;
-  line-height: 20px;
-  border-bottom: 1px solid #eaf4fd;
+    padding-bottom: 11px;
+    font-size: 18px;
+    line-height: 20px;
+    border-bottom: 1px solid #eaf4fd;
 }
+
 .clinics #clinics-box ul {
-  margin-top: 35px;
+    margin-top: 35px;
 }
+
 .clinics .klinika .left .cc-thumb {
-  margin-bottom: 2px;
+    margin-bottom: 2px;
 }
+
 .clinics .klinika .left .cc-thumb + p {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .clinics .klinika .left .cc-thumb + p + p {
-  margin-top: 4px;
-  padding-bottom: 2px;
+    margin-top: 4px;
+    padding-bottom: 2px;
 }
-
 
 /*index_page round images*/
 .round_img {
-  display: block;
-  position: relative;
-  float: left;
-  margin-right: 10px;
-  width: 80px;
-  height: 80px;
-  border: 6px solid #FFF;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(49, 67, 88, 0.2);
-  overflow: hidden;
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #FFF;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0 rgba(49, 67, 88, 0.2);
+    overflow: hidden;
 }
+
 .round_img img {
-  position: relative;
-  max-height: 80px;
+    position: relative;
+    max-height: 80px;
 }
