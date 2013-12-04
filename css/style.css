@@ -165,6 +165,10 @@ html, body {
     background: url(../image/button.png) repeat-x left -33px !important;
     height: 22px;
     padding-top: 10px; }
+header a.button {
+  float: right;
+  margin-left: 0;
+}
 
 .red-btn {
   display: block;
@@ -295,12 +299,12 @@ header {
       font-family: Conv_ProximaNova-Reg, sans-serif;
       letter-spacing: 0.2ex; }
   header .tel .city {
-    width: 103px;
+    width: 123px;
     height: 35px;
     float: left;
     margin-top: 28px;
     margin-bottom: 15px;
-    margin-left: 20px;
+    margin-left: 0px;
     text-align: right;
     color: #19a5af;
     font-family: Conv_ProximaNova-Reg, sans-serif;
