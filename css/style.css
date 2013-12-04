@@ -637,11 +637,12 @@ header {
   text-decoration: none; }
 
 .content_index .table .right ul li img {
-  border: 6px solid #FFF;
+/*  border: 6px solid #FFF;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(49, 67, 88, 0.2);
   float: left;
-  margin-right: 10px; }
+  margin-right: 10px;*/ 
+}
 
 .name_check {
   display: block;
@@ -2585,4 +2586,23 @@ input[type="checkbox"]:checked + label:hover:before {
 .clinics .klinika .left .cc-thumb + p + p {
   margin-top: 4px;
   padding-bottom: 2px;
+}
+
+
+/*index_page round images*/
+.round_img {
+  display: block;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  border: 6px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(49, 67, 88, 0.2);
+  overflow: hidden;
+}
+.round_img img {
+  position: relative;
+  max-height: 80px;
 }
