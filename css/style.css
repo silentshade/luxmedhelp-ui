@@ -844,6 +844,9 @@ footer .left span {
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
 }
+.home .new_sel .select {
+  width: 219px;
+}
 
 .new_sel .drop {
   position: absolute;
@@ -942,7 +945,7 @@ footer .left span {
     width: 170px; }
 
 .search-box #search-form .new_sel .select {
-  width: 132px; 
+  width: 153px; 
   color: #88a3bc  
 }
 
