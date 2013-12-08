@@ -1058,10 +1058,11 @@ footer .left span {
 .new_sel .select {
   white-space: nowrap;
   position: relative;
-  width: 196px;
+  /*width: 196px;*/
   padding: 5px 9px 1px 9px;
   font-size: 12px;
   line-height: 18px;
+  color: #88a3bc;
   /*color: #333;*/
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   cursor: pointer;
@@ -1069,10 +1070,6 @@ footer .left span {
   border: 1px solid #dbe6f2;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
-}
-
-.home .new_sel .select {
-  width: 219px;
 }
 
 .new_sel .drop {
@@ -1159,14 +1156,6 @@ footer .left span {
   display: none;
 }
 
-.table .right .new_sel .drop div img {
-  margin: 0 5px 0 0;
-}
-
-.table .right .new_sel .select img {
-  margin: 0 5px 0 0;
-}
-
 .new_sel .select:after {
   background: url(../image/new_style.png) no-repeat;
   height: 30px;
@@ -1178,38 +1167,23 @@ footer .left span {
 }
 
 .clinics-filter-form .new_sel {
-  width: 170px;
   margin-bottom: 15px;
 }
 
-.clinics-filter-form .new_sel .drop {
-  width: 170px;
+.home .clinics-filter-form .new_sel .drop div img {
+    margin: 0 5px 0 0;
 }
 
-.clinics-filter-form .new_sel .select {
+.home .clinics-filter-form .new_sel .select img {
+    margin: 0 5px 0 0;
+}
+
+.home .clinics-filter-form .new_sel .select {
+  width: 219px;
+}
+.clinics .clinics-filter-form .new_sel .select {
   width: 153px;
-  color: #88a3bc;
 }
-
-/*.intro .table .right .jktu {*/
-  /*position: relative;*/
-  /*height: 37px;*/
-/*}*/
-
-/*.intro .table .right .jktu > div {*/
-  /*position: absolute;*/
-  /*left: 0;*/
-  /*top: 0;*/
-  /*opacity: 0;*/
-  /*width: 279px;*/
-  /*height: 35px;*/
-  /*z-index: 1;*/
-/*}*/
-
-/*.intro .table .right .jktu .active {*/
-  /*opacity: 1;*/
-  /*z-index: 999;*/
-/*}*/
 
 /*-----------------------------articles------------------------------*/
 .articles .table .center {
