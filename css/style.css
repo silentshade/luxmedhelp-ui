@@ -2890,7 +2890,7 @@ footer .left span {
 }
 
 .clinics-filter-form .all-country ul li {
-  width: 160px;
+  width: 170px;
   height: 22px;
   border-bottom: 1px solid #e0f2ff;
   padding: 7px 0 0 4px;
@@ -2899,12 +2899,12 @@ footer .left span {
 
 .clinics-filter-form .all-country ul li label {
   cursor: pointer;
-  width: 110px;
+  width: 135px;
   display: inline-block;
 }
 
 .clinics-filter-form .all-country #all label {
-  width: 135px;
+  width: 160px;
 }
 
 .clinics-filter-form .all-country ul li:first-child {
