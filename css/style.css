@@ -1177,39 +1177,39 @@ footer .left span {
   right: -1px;
 }
 
-.search-box #search-form .new_sel {
+.clinics-filter-form .new_sel {
   width: 170px;
   margin-bottom: 15px;
 }
 
-.search-box #search-form .new_sel .drop {
+.clinics-filter-form .new_sel .drop {
   width: 170px;
 }
 
-.search-box #search-form .new_sel .select {
+.clinics-filter-form .new_sel .select {
   width: 153px;
   color: #88a3bc;
 }
 
-.intro .table .right .jktu {
-  position: relative;
-  height: 37px;
-}
+/*.intro .table .right .jktu {*/
+  /*position: relative;*/
+  /*height: 37px;*/
+/*}*/
 
-.intro .table .right .jktu > div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  width: 279px;
-  height: 35px;
-  z-index: 1;
-}
+/*.intro .table .right .jktu > div {*/
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*top: 0;*/
+  /*opacity: 0;*/
+  /*width: 279px;*/
+  /*height: 35px;*/
+  /*z-index: 1;*/
+/*}*/
 
-.intro .table .right .jktu .active {
-  opacity: 1;
-  z-index: 999;
-}
+/*.intro .table .right .jktu .active {*/
+  /*opacity: 1;*/
+  /*z-index: 999;*/
+/*}*/
 
 /*-----------------------------articles------------------------------*/
 .articles .table .center {
@@ -2881,41 +2881,41 @@ footer .left span {
   line-height: 15px;
 }
 
-.search-box #search-form {
+.clinics-filter-form {
   margin-top: 23px;
 }
 
-.search-box #search-form p {
+.clinics-filter-form p {
   margin: 0;
 }
 
-.search-box #search-form .red-btn {
+.clinics-filter-form .red-btn {
   letter-spacing: 0.2px;
 }
 
-.search-box #search-form .sel-margin .styled {
+.clinics-filter-form .sel-margin .styled {
   width: 160px;
   height: 28px;
   margin-bottom: 5px;
 }
 
-.search-box #search-form .sel-margin .select {
+.clinics-filter-form .sel-margin .select {
   width: 116px;
   white-space: nowrap;
   background: url(../image/select-arrow.png) no-repeat 137px 10px, url(../image/select-bg.png) repeat-x;
 }
 
-.search-box #search-form .sel-margin {
+.clinics-filter-form .sel-margin {
   margin: 7px 0 5px 0;
 }
 
-.search-box #search-form .all-country ul {
+.clinics-filter-form .all-country ul {
   list-style: none;
   padding: 0;
   margin: 30px 0 0 0;
 }
 
-.search-box #search-form .all-country ul li {
+.clinics-filter-form .all-country ul li {
   width: 160px;
   height: 22px;
   border-bottom: 1px solid #e0f2ff;
@@ -2923,17 +2923,17 @@ footer .left span {
   position: relative;
 }
 
-.search-box #search-form .all-country ul li label {
+.clinics-filter-form .all-country ul li label {
   cursor: pointer;
   width: 110px;
   display: inline-block;
 }
 
-.search-box #search-form .all-country #all label {
+.clinics-filter-form .all-country #all label {
   width: 135px;
 }
 
-.search-box #search-form .all-country ul li:first-child {
+.clinics-filter-form .all-country ul li:first-child {
   font-size: 11px;
   font-family: Conv_ProximaNova-Bold, sans-serif;
   font-weight: normal;
@@ -2942,17 +2942,17 @@ footer .left span {
   height: 21px;
 }
 
-.search-box #search-form .all-country ul li:hover,
-.search-box #search-form .all-country ul .selected {
+.clinics-filter-form .all-country ul li:hover,
+.clinics-filter-form .all-country ul .selected {
   background-color: #f2f9ff;
 }
 
-.search-box #search-form .all-country ul li img {
+.clinics-filter-form .all-country ul li img {
   float: left;
   margin-right: 9px;
 }
 
-.search-box #search-form .all-country input[type="checkbox"] {
+.clinics-filter-form .all-country input[type="checkbox"] {
   float: right;
   margin-right: 8px;
 }
