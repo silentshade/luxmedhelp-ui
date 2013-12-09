@@ -1076,7 +1076,6 @@ footer .left span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 228px;
   z-index: 10;
   display: none;
   height: 300px;
@@ -1097,6 +1096,10 @@ footer .left span {
   position: relative;
   font-size: 12px;
   font-family: Verdana, sans-serif;
+}
+
+.new_sel.inactive .select{
+  color: #dbe6f2;
 }
 
 .new_sel .select:hover,
@@ -1170,6 +1173,10 @@ footer .left span {
   margin-bottom: 15px;
 }
 
+.home .clinics-filter-form .new_sel .drop {
+  width: 228px;
+}
+
 .home .clinics-filter-form .new_sel .drop div img {
     margin: 0 5px 0 0;
 }
@@ -1181,6 +1188,11 @@ footer .left span {
 .home .clinics-filter-form .new_sel .select {
   width: 219px;
 }
+
+.clinics .clinics-filter-form .new_sel .drop {
+    width: 162px;
+}
+
 .clinics .clinics-filter-form .new_sel .select {
   width: 153px;
 }
