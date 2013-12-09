@@ -2834,12 +2834,27 @@ footer .left span {
 .search-box {
   font-size: 13px;
   margin-top: 10px;
+  width: 172px;
 }
 
 .search-box .red-btn {
   margin: 0 0 27px 0;
+  width: 160px;
+  height: 34px;
 }
-
+.search-box .red-btn + p,
+.search-box .new_sel + p {
+  margin-bottom: 7px;
+}
+.search-box .new_sel {
+  margin-bottom: 8px;
+}
+.all_country {
+  margin-top: -11px;
+}
+.clinics .search-box .clinics-filter-form .new_sel .select {
+  width: 141px;
+}
 .clinics .table .left .search-box .title {
   letter-spacing: 0.1em;
   font-family: Conv_ProximaNova-Bold, sans-serif;
@@ -2946,7 +2961,7 @@ input[type="checkbox"] + label:before {
   float: right;
   height: 13px;
   width: 13px;
-  /*margin: 0 5px -3px 0;*/
+  margin: 0 7px -2px 0;
   background: url(../image/checkbox.png) no-repeat -3px -4px;
   /*background-image: url(../image/checkbox.png);
   background-position: -3px -4px;
