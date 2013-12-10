@@ -1190,11 +1190,11 @@ footer .left span {
 }
 
 .clinics .clinics-filter-form .new_sel .drop {
-    width: 162px;
+    width: 150px;
 }
 
 .clinics .clinics-filter-form .new_sel .select {
-  width: 153px;
+  width: 141px;
 }
 
 /*-----------------------------articles------------------------------*/
@@ -2863,9 +2863,6 @@ footer .left span {
 }
 .all-country {
   margin-top: -11px;
-}
-.clinics .search-box .clinics-filter-form .new_sel .select {
-  width: 141px;
 }
 .clinics .table .left .search-box .title {
   letter-spacing: 0.1em;
