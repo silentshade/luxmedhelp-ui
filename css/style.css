@@ -378,6 +378,8 @@ header .tel .all_rus span {
 }
 
 header .tel .city {
+  white-space: nowrap;
+  overflow: hidden;
   width: 123px;
   height: 35px;
   float: left;
