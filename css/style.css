@@ -534,7 +534,7 @@ header .tel .city span {
 
 .intro .table .button {
   width: 159px;
-  background: url(../image/button_left.png) repeat-x left top;
+  /*background: url(../image/button_left.png) repeat-x left top;*/
   height: 25px;
   padding-top: 8px;
   margin-left: 0;
@@ -576,7 +576,7 @@ header .tel .city span {
   line-height: 20px;
   list-style-type: none;
   position: relative;
-  font-family: Conv_ProximaNova-Bold, sans-serif;
+  font-family: Conv_ProximaNova-Reg, sans-serif;
   color: #b2cddc;
   margin-top: 4px;
 }
@@ -1073,6 +1073,11 @@ footer .left span {
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
 }
+.home .new_sel .select {
+  width: 210px !important;
+  padding-left: 18px !important;
+}
+
 
 .new_sel .drop {
   position: absolute;
@@ -1088,6 +1093,9 @@ footer .left span {
   border: 1px solid #dbe6f2;
   border-radius: 4px 4px;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 5px rgba(240, 243, 245, 0.75);
+  -moz-box-shadow:    0px 2px 5px rgba(240, 243, 245, 0.75);
+  box-shadow:         0px 2px 5px rgba(240, 243, 245, 0.75);
 }
 
 .new_sel .jspPane {
@@ -1127,6 +1135,9 @@ footer .left span {
   position: relative;
   color: #88a3bc;
 }
+.clinics .new_sel .drop > div {
+  padding-left: 10px !important;
+}
 
 .fader {
   background: url("../image/fader.png") repeat-y left top;
@@ -1148,7 +1159,7 @@ footer .left span {
 }
 
 .new_sel .drop > div:hover {
-  background: #61a30f;
+  background: #6fbd15;
   color: #fff;
 }
 
@@ -1197,6 +1208,11 @@ footer .left span {
 
 .clinics .clinics-filter-form .new_sel .select {
   width: 141px;
+}
+.home .clinics-filter-form .red-btn {
+  -webkit-box-shadow: 0px 2px 5px rgba(218, 218, 219, 0.75);
+  -moz-box-shadow:    0px 2px 5px rgba(218, 218, 219, 0.75);
+  box-shadow:         0px 2px 5px rgba(218, 218, 219, 0.75);
 }
 
 /*-----------------------------articles------------------------------*/
@@ -1761,6 +1777,22 @@ footer .left span {
 
 .services .table .center .box-lh ul li p span {
   font-size: 13px;
+}
+.services .help-box {
+  padding-top: 0;
+  margin-top: -8px;
+  border: none;
+  background: none;
+}
+.services .help-box h3 {
+  margin-bottom: 5px;
+  margin-left: 34px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #475564;
+  font-style: normal;
+  font-weight: bold;
+  font-family: Conv_ProximaNova-Bold;
 }
 
 /*-----------------------END---services------------------------------*/
@@ -2430,7 +2462,7 @@ footer .left span {
   color: #32a7c4;
   font-family: Conv_ProximaNova-Bold, sans-serif;
   font-weight: normal;
-  border-bottom: 2px dashed #32a7c4;
+  border-bottom: 1px dashed #32a7c4;
   cursor: pointer;
 }
 
@@ -2642,15 +2674,21 @@ footer .left span {
 }
 
 #other-checkups ul li {
+  position: relative;
   margin-bottom: 10px;
+  padding-left: 12px;
 }
 
 #other-checkups ul li a {
   color: #32a7c4;
-  margin-left: 7px;
+  margin-left: 0px;
 }
 
 #other-checkups ul li:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   content: "»";
   color: #ff7f66;
 }
@@ -2854,7 +2892,8 @@ footer .left span {
 .search-box .red-btn {
   margin: 0 0 27px 0;
   width: 160px;
-  height: 34px;
+  height: 37px;
+  background-size: 100%;
 }
 .search-box .red-btn + p,
 .search-box .new_sel + p {
@@ -3208,16 +3247,18 @@ input[type="checkbox"]:checked + label:hover:before {
 }
 
 .clinics .klinika .left .cc-thumb {
-  margin-bottom: 2px;
+  margin-bottom: 14px;
 }
 
 .clinics .klinika .left .cc-thumb + p {
   padding-bottom: 5px;
+  line-height: 15px;
 }
 
 .clinics .klinika .left .cc-thumb + p + p {
-  margin-top: 4px;
-  padding-bottom: 2px;
+  margin-top: 9px;
+  padding-bottom: 6px;
+  line-height: 15px;
 }
 
 /*index_page round images*/
