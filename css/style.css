@@ -1593,7 +1593,7 @@ footer .left span {
   line-height: 20px;
 }
 
-.company .table .center .all_caps {
+.table .center .all_caps {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.3px;
