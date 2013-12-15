@@ -3027,15 +3027,15 @@ input[type="checkbox"] + label::before {
   background-position: -3px -4px;
 }
 
-input[type="checkbox"]:checked + label::before,
-input[type="checkbox"]:checked + label:before {
+input[type="checkbox"].active + label::before,
+input[type="checkbox"].active + label:before {
   background-position: -3px -54px;
 }
 
-input[type="checkbox"]:checked:hover + label::before,
-input[type="checkbox"]:checked:hover + label:before,
-input[type="checkbox"]:checked + label:hover::before,
-input[type="checkbox"]:checked + label:hover:before {
+input[type="checkbox"].active:hover + label::before,
+input[type="checkbox"].active:hover + label:before,
+input[type="checkbox"].active + label:hover::before,
+input[type="checkbox"].active + label:hover:before {
   background-position: -3px -79px;
 }
 
