@@ -479,6 +479,7 @@ header .tel .city span {
   color: #ff7f66;
   margin: 0;
   font-weight: normal;
+  font-style: italic;
 }
 
 .intro .table .left p {
