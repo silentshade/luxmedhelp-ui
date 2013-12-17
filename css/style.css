@@ -25,10 +25,13 @@
 
 @font-face {
   font-family: Conv_PT_Serif-Web-Italic;
-  src: url("fonts/PT_Serif-Web-Italic.eot");
-  src: url("fonts/PT_Serif-Web-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/PT_Serif-Web-Italic.woff") format("woff"), url("fonts/PT_Serif-Web-Italic.ttf") format("truetype"), url("fonts/PT_Serif-Web-Italic.svg") format("svg");
-  font-weight: normal;
-  font-style: italic;
+  src: url('pt_serif-web-italic-webfont.eot');
+    src: url('fonts/pt_serif-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt_serif-web-italic-webfont.woff') format('woff'),
+         url('fonts/pt_serif-web-italic-webfont.ttf') format('truetype'),
+         url('fonts/pt_serif-web-italic-webfont.svg#pt_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Global classes */
@@ -227,6 +230,9 @@ header a.button {
 .red-btn:hover {
   background-position: 0 -45px;
   color: #fff !important;
+}
+.clinics-filter-form .red-btn:hover {
+  background-position: 0 -41px;
 }
 
 .red-btn:active {
@@ -3108,7 +3114,7 @@ input[type="checkbox"].active + label:hover:before {
 .clinic-left-side .left .cc-thumb {
   float: none;
   margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .klinika .left p,
@@ -3247,16 +3253,16 @@ input[type="checkbox"].active + label:hover:before {
   margin-top: 35px;
 }
 
-.clinics .klinika .left .cc-thumb {
+.klinika .left .cc-thumb {
   margin-bottom: 14px;
 }
 
-.clinics .klinika .left .cc-thumb + p {
+.klinika .left .cc-thumb + p {
   padding-bottom: 5px;
   line-height: 15px;
 }
 
-.clinics .klinika .left .cc-thumb + p + p {
+.klinika .left .cc-thumb + p + p {
   margin-top: 9px;
   padding-bottom: 6px;
   line-height: 15px;
