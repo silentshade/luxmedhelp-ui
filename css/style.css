@@ -3113,7 +3113,7 @@ input[type="checkbox"].active + label:hover:before {
 .clinic-left-side .left .cc-thumb {
   float: none;
   margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .klinika .left p,
@@ -3252,16 +3252,16 @@ input[type="checkbox"].active + label:hover:before {
   margin-top: 35px;
 }
 
-.clinics .klinika .left .cc-thumb {
+.klinika .left .cc-thumb {
   margin-bottom: 14px;
 }
 
-.clinics .klinika .left .cc-thumb + p {
+.klinika .left .cc-thumb + p {
   padding-bottom: 5px;
   line-height: 15px;
 }
 
-.clinics .klinika .left .cc-thumb + p + p {
+.klinika .left .cc-thumb + p + p {
   margin-top: 9px;
   padding-bottom: 6px;
   line-height: 15px;
