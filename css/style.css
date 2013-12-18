@@ -25,13 +25,13 @@
 
 @font-face {
   font-family: Conv_PT_Serif-Web-Italic;
-  src: url('pt_serif-web-italic-webfont.eot');
-    src: url('fonts/pt_serif-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/pt_serif-web-italic-webfont.woff') format('woff'),
-         url('fonts/pt_serif-web-italic-webfont.ttf') format('truetype'),
-         url('fonts/pt_serif-web-italic-webfont.svg#pt_serifitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  src: url("fonts/pt_serif-web-italic-webfont.eot");
+  src: url("fonts/pt_serif-web-italic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("fonts/pt_serif-web-italic-webfont.woff") format("woff"),
+       url("fonts/pt_serif-web-italic-webfont.ttf") format("truetype"),
+       url("fonts/pt_serif-web-italic-webfont.svg#pt_serifitalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* Global classes */
@@ -228,7 +228,7 @@ header a.button {
 }
 
 .red-btn:hover {
-  background-position: 0 -45px;
+  background-position: 0 -41.5px;
   color: #fff !important;
 }
 .clinics-filter-form .red-btn:hover {
@@ -239,7 +239,7 @@ header a.button {
 }
 
 .red-btn:active {
-  background-position: 0 -90px;
+  background-position: 0 -83px;
   outline: none;
 }
 
@@ -488,6 +488,7 @@ header .tel .city span {
   color: #ff7f66;
   margin: 0;
   font-weight: normal;
+  font-style: italic;
 }
 
 .intro .table .left p {
@@ -1602,7 +1603,7 @@ footer .left span {
   line-height: 20px;
 }
 
-.company .table .center .all_caps {
+.table .center .all_caps {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.3px;
@@ -2901,7 +2902,7 @@ footer .left span {
 .search-box .red-btn {
   margin: 0 0 27px 0;
   width: 160px;
-  height: 37px;
+  height: 40px;
   background-size: 100%;
 }
 .search-box .red-btn + p,
