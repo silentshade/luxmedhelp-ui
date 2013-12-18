@@ -3288,3 +3288,7 @@ input[type="checkbox"].active + label:hover:before {
   position: relative;
   max-height: 80px;
 }
+
+.left ul {
+  padding-right: 20px;
+}
