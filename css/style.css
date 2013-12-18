@@ -234,6 +234,9 @@ header a.button {
 .clinics-filter-form .red-btn:hover {
   background-position: 0 -41px;
 }
+.home .clinics-filter-form .red-btn:hover {
+  background-position: 0 -45px;
+}
 
 .red-btn:active {
   background-position: 0 -83px;
@@ -1197,7 +1200,7 @@ footer .left span {
   width: 228px;
 }
 
-.home .clinics-filter-form .new_sel .drop div img {
+.clinics-filter-form .new_sel .drop div img {
     margin: 0 5px 0 0;
 }
 
@@ -3286,3 +3289,20 @@ input[type="checkbox"].active + label:hover:before {
   position: relative;
   max-height: 80px;
 }
+
+.left ul {
+  padding-right: 20px;
+}
+
+.orders .new_sel.countries .select {
+  width: 380px;
+}
+.orders .new_sel.countries .drop {
+  width: 388px;
+}
+.klinika.table {
+  width: 960px !important; 
+}
+.clinics .klinika.table .left .cc-thumb+p {
+  margin-right: 28px;
+} 
