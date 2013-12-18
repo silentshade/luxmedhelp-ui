@@ -74,11 +74,10 @@
                                             <!--наиболее подходящих для<br>-->
                                             <!--вас клиник.</span>-->
                 <form method="get" action="" name="clinics_filter_form" class="clinics-filter-form">
-                    <input class="red-btn" type="button" value="Искать клиники">
 
-                    <p><label>Направление лечения</label></p>
+                    <p><label>Заболевание</label></p>
                     <div class="new_sel">
-                        <div class="select">Выберите пункт</div>
+                        <div class="select">Выберите...</div>
                         <div class="drop">
                             <div data-value="first">Первый пункт</div>
                             <div data-value="second" class="check">Второй пункт</div>
@@ -101,8 +100,8 @@
                         </select>
                     </div>
 
-                    <p><label>Ваше заболевание</label></p>
-                    <div class="new_sel">
+                    <p class="hidden"><label>Ваше заболевание</label></p>
+                    <div class="hidden new_sel">
                         <div class="select">Рак простаты и что-то ещё</div>
                         <div class="drop">
                             <div data-value="first">Значение a1</div>
@@ -131,6 +130,8 @@
                             <li><img src="image/flags/16/Belarus.png" width="16" height="16" alt=""/><label for="id8">Белоруссия</label><input type="checkbox" id="id8" name="id8" class="styled" /></li>
                         </ul>
                     </div>
+
+                    <p><br><input class="red-btn" type="button" value="Искать клиники"></p>
                 </form>
             </div>
 
