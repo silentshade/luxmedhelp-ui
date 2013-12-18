@@ -13,7 +13,7 @@
         <div class="table">
             <ul class="fr">
                 <li class="fl"><a href="#">Главная</a></li>
-                <li class="fl"><a class="current"  href="#">Клиники</a></li>
+                <li class="fl"><a class="current" href="#">Клиники</a></li>
                 <li class="fl"><a href="#">Программы</a></li>
                 <li class="fl"><a href="#">Чекапы</a></li>
                 <li class="fl"><a href="#">Услуги </a></li>
@@ -30,6 +30,7 @@
     <div class="table">
         <a href="#" class="logo"></a>
         <a href="#" onclick="return false" class="top_b"></a>
+
         <div class="tel">
             <div class="all_rus">
                 8 800 550-19-50
@@ -56,70 +57,165 @@
     <div class="table">
         <div class="left">
             <h1>Лечение без границ</h1>
+
             <div class="border">
                 <p>
-                    Здоровье, своё и близких, – это самая большая ценность в жизни человека. Поэтому мы открываем для своих клиентов возможность получения качественного лечения в лучших клиниках мира.</p>
-                Оформите заявку на этом сайте и наши специалисты свяжутся с вами для предоставления бесплатной консультации и подбора подходящей именно вам программы лечения.  Мы возьмём на себя полную организацию вашей поездки в выбранную клинику: осуществим перевод документов, поможем с получением визы и бронированием гостиницы для вас и сопровождающих вас близких, а так же обеспечим сопровождение врачом и переводчиком в стране лечения.
+                    Здоровье, своё и близких, – это самая большая ценность в жизни человека. Поэтому мы открываем для
+                    своих клиентов возможность получения качественного лечения в лучших клиниках мира.</p>
+                Оформите заявку на этом сайте и наши специалисты свяжутся с вами для предоставления бесплатной
+                консультации и подбора подходящей именно вам программы лечения. Мы возьмём на себя полную организацию
+                вашей поездки в выбранную клинику: осуществим перевод документов, поможем с получением визы и
+                бронированием гостиницы для вас и сопровождающих вас близких, а так же обеспечим сопровождение врачом и
+                переводчиком в стране лечения.
                 <a href="#" class="button">
                     Оформить заявку
                 </a>
             </div>
         </div>
         <div id="drop_form" class="right">
-          <form method="get" action="" name="clinics_filter_form" class="clinics-filter-form">
+            <form accept-charset="UTF-8" action="" class="clinics-filter-form" method="get">
+                <img src="image/intro_r_img.png" width="279" height="165">
+                <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+                <p>
+                    <span class="label">Направление лечения</span>
+                </p>
 
-            <img src="image/intro_r_img.png" width="279" height="165">
+                <p class="sel_margin"></p>
 
-            <label for="autocom">Ваше заболевание</label>
-            <div class="jktu ailments">
-                <div class="con_none active">
-                    <input type="text" name="q" id="autocom">
+                <div class="new_sel treatments">
+                    <div class="select"><span class="fader"></span>Выберите направление</div>
+                    <div class="drop"><span class="fader"></span>
+
+                        <div class="check" data-value="-1"><span class="fader"></span>Выберите пункт</div>
+                        <div data-value="104"><span class="fader"></span>Аллергология</div>
+                        <div data-value="105"><span class="fader"></span>Гастроэнтерология</div>
+                        <div data-value="106"><span class="fader"></span>Гематология</div>
+                        <div data-value="107"><span class="fader"></span>Гинекология</div>
+                        <div data-value="108"><span class="fader"></span>Детская Гематология</div>
+                        <div data-value="109"><span class="fader"></span>Детская Иммунология</div>
+                        <div data-value="110"><span class="fader"></span>Детская Кардиология</div>
+                        <div data-value="111"><span class="fader"></span>Детская Психиатрия</div>
+                        <div data-value="112"><span class="fader"></span>Детская Ревматология</div>
+                        <div data-value="113"><span class="fader"></span>Детская Урология</div>
+                        <div data-value="114"><span class="fader"></span>Детская Хирургия</div>
+                        <div data-value="115"><span class="fader"></span>Диабетология</div>
+                        <div data-value="116"><span class="fader"></span>Кардиология</div>
+                        <div data-value="117"><span class="fader"></span>Нейроонкология</div>
+                        <div data-value="118"><span class="fader"></span>Неврология</div>
+                        <div data-value="119"><span class="fader"></span>Нейрохирургия</div>
+                        <div data-value="120"><span class="fader"></span>Общая Педиатрия</div>
+                        <div data-value="121"><span class="fader"></span>Общая Хирургия</div>
+                        <div data-value="122"><span class="fader"></span>Онкология</div>
+                        <div data-value="123"><span class="fader"></span>Онко-Хирургия</div>
+                        <div data-value="124"><span class="fader"></span>Онкогинекология</div>
+                        <div data-value="125"><span class="fader"></span>Ортопедия</div>
+                        <div data-value="126"><span class="fader"></span>Оториноларингология</div>
+                        <div data-value="127"><span class="fader"></span>Офтальмология</div>
+                        <div data-value="128"><span class="fader"></span>Пластическая Хирургия</div>
+                        <div data-value="129"><span class="fader"></span>Радиационная Онкология</div>
+                        <div data-value="130"><span class="fader"></span>Рентгенология</div>
+                        <div data-value="131"><span class="fader"></span>Сердечно-Сосудистая Хирургия</div>
+                        <div data-value="132"><span class="fader"></span>Сосудистая Хирургия</div>
+                        <div data-value="133"><span class="fader"></span>Спортивная Медицина</div>
+                        <div data-value="134"><span class="fader"></span>Травматология</div>
+                        <div data-value="135"><span class="fader"></span>Урология</div>
+                        <div data-value="136"><span class="fader"></span>Хирургия</div>
+                        <div data-value="137"><span class="fader"></span>Эндокринология</div>
+                    </div>
+                    <select class="newselect hidden treatment" id="treatment" name="treatment">
+                        <option value=""></option>
+                        <option value="104">Аллергология</option>
+                        <option value="105">Гастроэнтерология</option>
+                        <option value="106">Гематология</option>
+                        <option value="107">Гинекология</option>
+                        <option value="108">Детская Гематология</option>
+                        <option value="109">Детская Иммунология</option>
+                        <option value="110">Детская Кардиология</option>
+                        <option value="111">Детская Психиатрия</option>
+                        <option value="112">Детская Ревматология</option>
+                        <option value="113">Детская Урология</option>
+                        <option value="114">Детская Хирургия</option>
+                        <option value="115">Диабетология</option>
+                        <option value="116">Кардиология</option>
+                        <option value="117">Нейроонкология</option>
+                        <option value="118">Неврология</option>
+                        <option value="119">Нейрохирургия</option>
+                        <option value="120">Общая Педиатрия</option>
+                        <option value="121">Общая Хирургия</option>
+                        <option value="122">Онкология</option>
+                        <option value="123">Онко-Хирургия</option>
+                        <option value="124">Онкогинекология</option>
+                        <option value="125">Ортопедия</option>
+                        <option value="126">Оториноларингология</option>
+                        <option value="127">Офтальмология</option>
+                        <option value="128">Пластическая Хирургия</option>
+                        <option value="129">Радиационная Онкология</option>
+                        <option value="130">Рентгенология</option>
+                        <option value="131">Сердечно-Сосудистая Хирургия</option>
+                        <option value="132">Сосудистая Хирургия</option>
+                        <option value="133">Спортивная Медицина</option>
+                        <option value="134">Травматология</option>
+                        <option value="135">Урология</option>
+                        <option value="136">Хирургия</option>
+                        <option value="137">Эндокринология</option>
+                    </select>
                 </div>
-            </div>
-            <span class="label">Направление лечения</span>
-            <div class="new_sel">
-                <div class="select">Выберите пункт</div>
-                <div class="drop">
-                    <div data-value="Выберите пункт" class="check">Выберите пункт</div>
-                    <div data-value="Онкология" data-option="one">Онкология</div>
-                    <div data-value="Урология" data-option="two">Урология</div>
-                    <div data-value="Офтальмоталогия" data-option="three">Офтальмоталогия</div>
-                </div>
-                <select class="newselect hidden treatments" name="select">
-                    <option value="Выберите пункт">Выберите пункт</option>
-                    <option value="Онкология">Онкология</option>
-                    <option value="Урология">Урология</option>
-                    <option value="Офтальмоталогия">Офтальмоталогия</option>
-                </select>
-            </div>
-            <span class="label">Предпочитаемая страна лечения </span>
-            <div class="new_sel">
-                <div class="select">Выберите пункт</div>
-                <div data-use-html="true" class="drop">
-                    <div data-value="zero" class="check">Не имеет значения</div>
-                    <div data-value="first"><img src="image/flags/16/Switzerland.png" width="16" height="16">Швейцария</div>
-                    <div data-value="3"><img src="image/flags/16/Germany.png" width="16" height="16">Германия</div>
-                    <div data-value="4"><img src="image/flags/16/Israel.png" width="16" height="16">США</div>
-                    <div data-value="5"><img src="image/flags/16/Czech Republic.png" width="16" height="16">Чехия</div>
-                    <div data-value="6"><img src="image/flags/16/Israel.png" width="16" height="16">Израиль</div>
-                    <div data-value="7"><img src="image/flags/16/Spain.png" width="16" height="16">Испания</div>
-                </div>
-                <select class="newselect hidden" name="select">
-                    <option value="1">Не имеет значения</option>
-                    <option value="2">Швейцария</option>
-                    <option value="3">Германия</option>
-                    <option value="4">США</option>
-                    <option value="5">Чехия</option>
-                    <option value="6">Израиль</option>
-                    <option value="7">Испания</option>
-                </select>
-            </div>
+                <p>
+                    <span class="label">Ваше заболевание</span>
+                </p>
 
-            <input class="red-btn" type="button" value="Подобрать клиники">
-            <div class="result" id="result">
+                <p class="sel_margin"></p>
 
-            </div>
-          </form>
+                <div class="new_sel ailments inactive">
+                    <div class="select"><span class="fader"></span>Выберите направление</div>
+                    <div class="drop"><span class="fader"></span>
+
+                        <div class="check" data-value="-1"><span class="fader"></span>Выберите пункт</div>
+                        <div data-treatment="122" data-value="1"><span class="fader"></span>Рак груди</div>
+                        <div data-treatment="122" data-value="2"><span class="fader"></span>Рак кожи</div>
+                    </div>
+                    <select class="newselect hidden ailment" id="ailment" name="ailment">
+                        <option value=""></option>
+                        <option value="1">Рак груди</option>
+                        <option value="2">Рак кожи</option>
+                    </select>
+                </div>
+
+                <span class="label">Предпочитаемая страна лечения</span>
+
+                <div class="new_sel countries">
+                    <div class="select"><span class="fader"></span>Не имеет значения</div>
+                    <div class="drop"><span class="fader"></span>
+
+                        <div class="check" value="-1"><span class="fader"></span>Не имеет значения</div>
+                        <div data-value="41"><span class="fader"></span><img height="16" width="16" src="image/flags/16/United%20Kingdom(Great%20Britain).png">Великобритания
+                        </div>
+                        <div data-value="35"><span class="fader"></span><img height="16"
+                                                                             src="image/flags/16/Israel.png"
+                                                                             width="16">Израиль
+                        </div>
+                        <div data-value="38"><span class="fader"></span><img height="16"
+                                                                             src="image/flags/16/Spain.png"
+                                                                             width="16">Испания
+                        </div>
+                        <div data-value="36"><span class="fader"></span><img height="16" width="16" src="image/flags/16/Czech%20Republic.png">Чехия
+                        </div>
+                        <div data-value="40"><span class="fader"></span><img height="16"
+                                                                             src="image/flags/16/Sweden.png"
+                                                                             width="16">Швеция
+                        </div>
+                    </div>
+                    <select class="newselect hidden country" id="countries" name="countries">
+                        <option value="">Не имеет значения</option>
+                        <option value="41">Великобритания</option>
+                        <option value="35">Израиль</option>
+                        <option value="38">Испания</option>
+                        <option value="36">Чехия</option>
+                        <option value="40">Швеция</option>
+                    </select>
+                </div>
+                <input class="red-btn" name="commit" type="submit" value="Подобрать клиники">
+            </form>
         </div>
         <div class="clear"></div>
     </div>
@@ -136,7 +232,9 @@
                 <li><span>Профессиональный перевод</span> медицинской документации</li>
                 <li>Бесплатное <span>оформление визы</span> и <span>бронирование билетов</span></li>
                 <li><span>Сопровождение</span> личным переводчиком-координатором или врачом</li>
-                <li><span>Экспертный анализ ведущими</span> специалистами и организация "второго мнения" (second opinion)</li>
+                <li><span>Экспертный анализ ведущими</span> специалистами и организация "второго мнения" (second
+                    opinion)
+                </li>
                 <li><span>Организация трансфера</span> в лечебное учреждение или отель</li>
             </ul>
             <a href="#">Подробный список услуг</a>
@@ -154,7 +252,8 @@
                 </div>
                 <div>
                     <a href="#">
-                        <img src="image/flags/24/United States of America(USA).png" width="32">Лечение в <br> <span>США</span>
+                        <img src="image/flags/24/United States of America(USA).png" width="32">Лечение в <br>
+                        <span>США</span>
                     </a>
                 </div>
                 <div>
@@ -227,53 +326,88 @@
         <div class="bg_left"></div>
         <div class="left">
             <a href="#" class="selected_clinics">Избранные клиники</a>
+
             <div class="clinics-box" id="clinics-box">
                 <ul>
                     <li class="klinika clearfix">
                         <div class="left">
                             <img src="image/article-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
+
                             <p class="line">Адрес: <span class="adds">Женева</span></p>
+
                             <p>Тип: <span class="type">Частная</span></p>
                             <a href="#" class="cost"> Уточнить стоимость</a>
                         </div>
                         <div class="right">
                             <a href="#" class="cc-way">Клиника "Женераль 1"</a><br/>
-                            <a class="cc-web"  href="#">Сеть клиник "Женолье" </a>
-                            <div class="cc-way_country"><img src="image/flags/16/Switzerland.png" width="16" height="16">Швейцария</div>
-                            <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды. Исторический аспект университетского города сторический аспект университетского городаудачно сочетается с живой атмосферой современности.</p><p>
-                            Несмотря на то, что клиника является многопрофильной, особенно сильные направления в клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая, гинекологическая, лор, онкологическая, нейрохирургия).</p>
+                            <a class="cc-web" href="#">Сеть клиник "Женолье" </a>
+
+                            <div class="cc-way_country"><img src="image/flags/16/Switzerland.png" width="16"
+                                                             height="16">Швейцария
+                            </div>
+                            <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти
+                                минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды.
+                                Исторический аспект университетского города сторический аспект университетского
+                                городаудачно сочетается с живой атмосферой современности.</p>
+
+                            <p>
+                                Несмотря на то, что клиника является многопрофильной, особенно сильные направления в
+                                клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая,
+                                гинекологическая, лор, онкологическая, нейрохирургия).</p>
                             <a href="#" class="detail">Подробнее о клинике</a>
                         </div>
                     </li>
                     <li class="klinika clearfix">
                         <div class="left">
                             <img src="image/article-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
+
                             <p class="line">Адрес: <span class="adds">Женева</span></p>
+
                             <p>Тип: <span class="type">Частная</span></p>
                             <a href="#" class="cost"> Уточнить стоимость</a>
                         </div>
                         <div class="right">
                             <a href="#" class="cc-way">Клиника "Женераль 2"</a><br/>
-                            <a class="cc-web"  href="#">Сеть клиник "Женолье" </a>
-                            <div class="cc-way_country"><img src="image/flags/16/Switzerland.png" width="16" height="16">Швейцария</div>
-                            <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды. Исторический аспект университетского города сторический аспект университетского городаудачно сочетается с живой атмосферой современности.</p>
-                            <p>Несмотря на то, что клиника является многопрофильной, особенно сильные направления в клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая, гинекологическая, лор, онкологическая, нейрохирургия).</p>
+                            <a class="cc-web" href="#">Сеть клиник "Женолье" </a>
+
+                            <div class="cc-way_country"><img src="image/flags/16/Switzerland.png" width="16"
+                                                             height="16">Швейцария
+                            </div>
+                            <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти
+                                минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды.
+                                Исторический аспект университетского города сторический аспект университетского
+                                городаудачно сочетается с живой атмосферой современности.</p>
+
+                            <p>Несмотря на то, что клиника является многопрофильной, особенно сильные направления в
+                                клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая,
+                                гинекологическая, лор, онкологическая, нейрохирургия).</p>
                             <a href="#" class="detail">Подробнее о клинике</a>
                         </div>
                     </li>
                     <li class="klinika clearfix">
                         <div class="left">
                             <img src="image/article-thumb.png" width="160" height="113" alt="" class="cc-thumb"/>
+
                             <p class="line">Адрес: <span class="adds">Женева</span></p>
+
                             <p>Тип: <span class="type">Частная</span></p>
                             <a href="#" class="cost"> Уточнить стоимость</a>
                         </div>
                         <div class="right">
                             <a href="#" class="cc-way">Клиника "Женераль 3"</a><br/>
-                            <a class="cc-web"  href="#">Сеть клиник "Женолье" </a>
-                            <div class="cc-way_country"><img src="image/flags/16/Switzerland.png" width="16" height="16">Швейцария</div>
-                            <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды. Исторический аспект университетского города сторический аспект университетского городаудачно сочетается с живой атмосферой современности.</p>
-                            <p>Несмотря на то, что клиника является многопрофильной, особенно сильные направления в клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая, гинекологическая, лор, онкологическая, нейрохирургия).</p>
+                            <a class="cc-web" href="#">Сеть клиник "Женолье" </a>
+
+                            <div class="cc-way_country"><img src="image/flags/16/Switzerland.png" width="16"
+                                                             height="16">Швейцария
+                            </div>
+                            <p>Современные корпуса клиники находятся с одной стороны в самом центре города, в пяти
+                                минутах ходьбы от вокзала, а с другой стороны - в зелёной зоне городской среды.
+                                Исторический аспект университетского города сторический аспект университетского
+                                городаудачно сочетается с живой атмосферой современности.</p>
+
+                            <p>Несмотря на то, что клиника является многопрофильной, особенно сильные направления в
+                                клинике – это ортопедия (спортивная медицина, травматология) и хирургия (общая,
+                                гинекологическая, лор, онкологическая, нейрохирургия).</p>
                             <a href="#" class="detail">Подробнее о клинике</a>
                         </div>
                     </li>
@@ -287,27 +421,32 @@
                 <li>
                     <div class="round_img"><img src="image/check_index.jpg" width="80" height="80"></div>
                     <span>CHECK-UP</span><br>
-                    <a href="#" class="name_check">Заболеваний обмена веществ и ещё что-то для длинны</a>от&nbsp;<span class="cost_check">3245 Евро</span></li>
+                    <a href="#" class="name_check">Заболеваний обмена веществ и ещё что-то для длинны</a>от&nbsp;<span
+                        class="cost_check">3245 Евро</span></li>
                 <li>
                     <div class="round_img"><img src="image/check_index.jpg" width="80" height="80"></div>
-                    <span>CHECK-UP</span><br><a href="#" class="name_check">Синдром хронической усталости</a>от&nbsp;<span class="cost_check">1765 Евро</span>
+                    <span>CHECK-UP</span><br><a href="#" class="name_check">Синдром хронической
+                    усталости</a>от&nbsp;<span class="cost_check">1765 Евро</span>
                 </li>
                 <li>
                     <div class="round_img"><img src="image/check_index.jpg" width="80" height="80"></div>
-                    <span>CHECK-UP</span><br><a href="#" class="name_check">Заболеваний обмена веществ</a>от&nbsp;<span class="cost_check">3245 Евро</span>
+                    <span>CHECK-UP</span><br><a href="#" class="name_check">Заболеваний обмена веществ</a>от&nbsp;<span
+                        class="cost_check">3245 Евро</span>
                 </li>
             </ul>
             <div class="clear"></div>
             <a href="#" class="all_programs">Все программы</a>
 
             <a href="#" class="diagnostic_programs last_articles">Последние статьи</a>
+
             <div class="recent_articles">
                 <ul>
                     <li>
                                 <span class="date">
                                 16 ноября 2011
                                 </span>
-                        <a href="#" class="title">Доктор Витт о новейшем методе лечения рака предстательной железы Да Винчи и ещё немного для теста длинного заголовка</a>
+                        <a href="#" class="title">Доктор Витт о новейшем методе лечения рака предстательной железы Да
+                            Винчи и ещё немного для теста длинного заголовка</a>
                     </li>
                     <li>
                                 <span class="date">
@@ -319,7 +458,8 @@
                                 <span class="date">
                                 16 ноября 2011
                                 </span>
-                        <a href="#" class="title">В Центре Лечения Простаты в Гронау возможно проведение операции ТУР</a>
+                        <a href="#" class="title">В Центре Лечения Простаты в Гронау возможно проведение операции
+                            ТУР</a>
                     </li>
                     <li>
                                 <span class="date">
@@ -331,10 +471,11 @@
                                 <span class="date">
                                 16 ноября 2011
                                 </span>
-                        <a href="#" class="title">В Центре Лечения Простаты в Гронау возможно проведение операции ТУР</a>
+                        <a href="#" class="title">В Центре Лечения Простаты в Гронау возможно проведение операции
+                            ТУР</a>
                     </li>
                 </ul>
-                <a href="#" class="all_articles" >Все статьи</a>
+                <a href="#" class="all_articles">Все статьи</a>
             </div>
         </div>
 
@@ -362,74 +503,16 @@
 <script src="js/jquery-2.0.3.min.js"></script>
 <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-<script src="js/jquery.dropdown.js"></script>
 <script src="js/js.js"></script>
 
 <script type="text/javascript">
 
-    $(".all-country ul li label").click(function(){
-        $(this).parent('li').toggleClass('selected');
-    });
-
-    window.ailment_treatment_mapping = [
-        {name: 'Онкология', ailments: ['рак','саркома','аденома']},
-        {name: 'Урология', ailments: ['цистит','простатит']},
-        {name: 'Офтальмоталогия', ailments: ['конъюктивит','кератит']}
-    ];
-
-    window.autocom_params = {
-        source: $.map(ailment_treatment_mapping, function(el,i){ return el.ailments }),
-        close: function() {
-            $('#result').addClass( "ui-corner-all" );
-            var rez = $("#autocom").val();
-
-            $('[data-item='+ rez +']').addClass('new')
-
-        }
-    }
-
-    window.options_for_select = function(scope){
-      return $.map(window.ailment_treatment_mapping, function(el,i){ if (el.name == scope) return el.ailments });
-    }
-
-    window.change_input = function(scope){
-      if (scope == 'Выберите пункт') return make_input();
-      else return make_select(scope);
-    }
-
-    window.make_input = function(){
-      var html =  '<div class="jktu ailments">';
-          html += '<div class="con_none active">';
-          html += '<input type="text" name="ailment" id="autocom">';
-          html += '</div></div>';
-      var el = $(html);
-      el.find('#autocom').autocomplete(autocom_params);
-      return el;
-    }
-
-    window.make_select = function(scope){
-      var html =  '<div class="new_sel ailments">';
-          html += '<div class="select">Выберите заболевание</div>';
-          html += '<div class="drop">';
-          html += '<div data-value="Выберите заболевание" class="check">Выберите заболевание</div>';
-          $.each(options_for_select(scope), function(i,opt){
-            html += '<div data-value="'+opt+'">'+opt+'</div>';
-          });
-          html += '</div>';
-          html += '<select class="newselect hidden" name="ailment">';
-          $.each(options_for_select(scope), function(i,opt){
-            html += '<option value="'+opt+'">'+opt+'</option>';
-          });
-          html += '</select></div>';
-      return html;
-    }
-
-    $( function() {
+    $(function () {
 
         $('#carousel').carouFredSel({
             width: 960,
             items: 6,
-            scroll:{ items:1,
+            scroll: { items: 1,
                 pauseOnHover: true
             },
             auto: {
@@ -440,12 +523,6 @@
             next: '#next',
             pagination: '#pager'
         });
-
-        $( "#autocom" ).autocomplete(autocom_params)
-
-        $('select.treatments').on('change',function(){
-          $('.ailments').replaceWith(change_input($(this).find('option:selected').val()));
-        })
 
 
     });

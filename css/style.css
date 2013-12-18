@@ -228,7 +228,7 @@ header a.button {
 }
 
 .red-btn:hover {
-  background-position: 0 -45px;
+  background-position: 0 -41.5px;
   color: #fff !important;
 }
 .clinics-filter-form .red-btn:hover {
@@ -236,7 +236,7 @@ header a.button {
 }
 
 .red-btn:active {
-  background-position: 0 -90px;
+  background-position: 0 -83px;
   outline: none;
 }
 
@@ -2899,7 +2899,7 @@ footer .left span {
 .search-box .red-btn {
   margin: 0 0 27px 0;
   width: 160px;
-  height: 37px;
+  height: 40px;
   background-size: 100%;
 }
 .search-box .red-btn + p,
