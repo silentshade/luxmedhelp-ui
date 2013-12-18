@@ -234,6 +234,9 @@ header a.button {
 .clinics-filter-form .red-btn:hover {
   background-position: 0 -41px;
 }
+.home .clinics-filter-form .red-btn:hover {
+  background-position: 0 -45px;
+}
 
 .red-btn:active {
   background-position: 0 -90px;
