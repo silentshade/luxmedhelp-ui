@@ -1199,7 +1199,7 @@ footer .left span {
   width: 228px;
 }
 
-.home .clinics-filter-form .new_sel .drop div img {
+.clinics-filter-form .new_sel .drop div img {
     margin: 0 5px 0 0;
 }
 
@@ -3291,4 +3291,11 @@ input[type="checkbox"].active + label:hover:before {
 
 .left ul {
   padding-right: 20px;
+}
+
+.orders .new_sel.countries .select {
+  width: 380px;
+}
+.orders .new_sel.countries .drop {
+  width: 388px;
 }
