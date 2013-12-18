@@ -3299,3 +3299,9 @@ input[type="checkbox"].active + label:hover:before {
 .orders .new_sel.countries .drop {
   width: 388px;
 }
+.klinika.table {
+  width: 960px !important; 
+}
+.clinics .klinika.table .left .cc-thumb+p {
+  margin-right: 28px;
+} 
