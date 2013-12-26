@@ -3367,7 +3367,7 @@ form .select:after {
   right: -1px;
 }
 form textarea {
-  width: 377px;
+  width: 380px;
   height: 177px;
   resize: none;
   border: 1px solid #DBE6F2;
@@ -3386,4 +3386,8 @@ form input.button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+form .drop {
+  width: 388px;
+  top: 21px;
 }
