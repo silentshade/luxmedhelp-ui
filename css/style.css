@@ -258,14 +258,16 @@ header a.button {
   margin: 19px 0 30px 29px;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
+  text-align: center;
 }
 
 .blue-btn:hover {
-  background: url(../image/button_h-comment.png) no-repeat center, url(../image/button-comment.png) repeat-x 0 0;
+  background: url(../image/button_h-comment.png) no-repeat center, url(../image/button-comment.png) repeat-x 0 0 !important;
 }
 
 .blue-btn:active {
-  background: url(../image/button-comment.png) repeat-x 0 -28px;
+  background: url(../image/button-comment.png) repeat-x 0 -28px !important;
   padding: 6px 0;
   height: 30px;
 }
