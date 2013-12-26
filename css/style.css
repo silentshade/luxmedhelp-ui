@@ -2732,7 +2732,7 @@ footer .left span {
 
 .programs .table .center {
   width: 500px;
-  padding-top: 4px;
+  /*padding-top: 4px;*/
   line-height: 20px;
   padding-right: 0;
 }
